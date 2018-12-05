@@ -42,6 +42,7 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = pageTableView.dequeueReusableCell(withIdentifier: DetailCell.cellDescription, for: indexPath) as! DetailCell
+        cell.selectionStyle = .none
         
         cell.descriptionLabel.text = selectedAction.description
         cell.locationLabel.text = selectedAction.location
