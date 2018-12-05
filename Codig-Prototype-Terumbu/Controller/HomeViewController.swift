@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
         setupNavigationBar()
     }
     
-    // MARK: Private methods
+    // MARK: - Private methods
     private func setupNavigationBar(){
         navigationController?.navigationBar.topItem?.title = "Terumbu"
         navigationController?.navigationBar.prefersLargeTitles = true
