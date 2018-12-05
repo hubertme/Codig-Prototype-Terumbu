@@ -27,6 +27,10 @@ class DetailViewController: UIViewController {
         pageTableView.register(DetailCell.nib, forCellReuseIdentifier: DetailCell.cellDescription)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
+    
     // MARK: Private methods
 }
 

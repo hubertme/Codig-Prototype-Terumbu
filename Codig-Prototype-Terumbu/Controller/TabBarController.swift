@@ -15,6 +15,10 @@ class TabBarController: UITabBarController {
         addViewControllers()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     private func addViewControllers(){
         let homeVC = HomeViewController()
         let donationVC = DonationViewController()
