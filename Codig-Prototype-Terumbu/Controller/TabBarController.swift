@@ -12,7 +12,6 @@ class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         addViewControllers()
     }
     
@@ -23,7 +22,6 @@ class TabBarController: UITabBarController {
         
 //        homeVC.tabBarItem = UITabBarItem(title: "Home", image: <#T##UIImage?#>, tag: <#T##Int#>)
 //        donationVC.tabBarItem = UITabBarItem(title: "Donation", image: <#T##UIImage?#>, tag: <#T##Int#>)
-//        profileVC.tabBarItem = UITabBarItem(title: "Profile", image: <#T##UIImage?#>, tag: <#T##Int#>)
         
         homeVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         donationVC.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 1)
