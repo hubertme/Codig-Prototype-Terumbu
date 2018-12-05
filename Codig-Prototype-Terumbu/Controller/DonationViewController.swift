@@ -10,7 +10,7 @@ import UIKit
 
 class DonationViewController: UIViewController {
     
-    var donations: Array<Donation> = []
+    var donations: Array<CoralAction> = []
     
     // MARK: - Outlets
     @IBOutlet weak var donationTableView: UITableView!
@@ -35,25 +35,25 @@ class DonationViewController: UIViewController {
     
     // Add donations for testing purposes only
     private func addDummyDonations(){
-        let donation1 = Donation()
+        let donation1 = CoralAction()
         donation1.title = "First item"
         donation1.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ex justo, interdum ac consectetur eu, rutrum vitae mi. Aenean malesuada ex eu placerat commodo."
         donation1.date = Date()
         donation1.location = "Jakarta, ID"
         
-        let donation2 = Donation()
+        let donation2 = CoralAction()
         donation2.title = "Second item"
         donation2.description = "Suspendisse nec sagittis leo. Suspendisse at felis egestas tellus ullamcorper fringilla vitae at lorem. Nulla consectetur, urna vitae euismod laoreet, lacus elit convallis nibh, mattis rhoncus ligula elit at erat. Cras sed justo blandit, tincidunt libero ac, vehicula arcu. In hac habitasse platea dictumst. Ut eu vestibulum risus. Nulla sodales tortor purus, eu faucibus lectus porta vitae. Suspendisse euismod nunc lectus. Etiam porta in nisi vitae pellentesque. Mauris blandit dolor eu libero malesuada mollis a nec enim. Praesent ullamcorper ultrices nibh nec auctor. Donec laoreet purus at erat aliquam, ut laoreet purus malesuada. Nulla sit amet mauris enim."
         donation2.date = Date()
         donation2.location = "Tangerang, ID"
         
-        let donation3 = Donation()
+        let donation3 = CoralAction()
         donation3.title = "Third item"
         donation3.description = "Integer efficitur consectetur dui, sed viverra risus pulvinar eget. Aliquam ullamcorper ullamcorper sem sit amet pulvinar. Praesent odio magna, pellentesque et fringilla non, hendrerit vitae sem. Vestibulum quis tortor at massa dapibus venenatis quis ut dui. Pellentesque eu massa commodo, scelerisque tellus vel, pellentesque orci."
         donation3.date = Date()
         donation3.location = "Kepulauan Seribu, ID"
         
-        let donation4 = Donation()
+        let donation4 = CoralAction()
         donation4.title = "Fourth item"
         donation4.description = "Morbi vitae bibendum massa."
         donation4.date = Date()
@@ -79,6 +79,7 @@ extension DonationViewController: UITableViewDelegate, UITableViewDataSource{
         cell.titleLabel.text = donation.title
         cell.descriptionLabel.text = donation.description
         cell.locationLabel.text = donation.location
+        cell.coralImageView.image = donation.image
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEE, dd/MMM/yyyy"

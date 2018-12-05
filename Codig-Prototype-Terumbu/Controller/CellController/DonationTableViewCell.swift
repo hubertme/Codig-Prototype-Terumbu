@@ -23,8 +23,12 @@ class DonationTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var coralImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        coralImageView.clipsToBounds = true
+        coralImageView.layer.cornerRadius = 5
     }
 }

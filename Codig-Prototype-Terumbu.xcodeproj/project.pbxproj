@@ -17,7 +17,7 @@
 		E4EF425A21B7B07900662CD3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EF425821B7B07900662CD3 /* HomeViewController.xib */; };
 		E4EF426321B7B45E00662CD3 /* DonationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF426121B7B45E00662CD3 /* DonationTableViewCell.swift */; };
 		E4EF426421B7B45E00662CD3 /* DonationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EF426221B7B45E00662CD3 /* DonationTableViewCell.xib */; };
-		E4EF426621B7B6F300662CD3 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF426521B7B6F300662CD3 /* Donation.swift */; };
+		E4EF426621B7B6F300662CD3 /* CoralAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF426521B7B6F300662CD3 /* CoralAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		E4EF425821B7B07900662CD3 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		E4EF426121B7B45E00662CD3 /* DonationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationTableViewCell.swift; sourceTree = "<group>"; };
 		E4EF426221B7B45E00662CD3 /* DonationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonationTableViewCell.xib; sourceTree = "<group>"; };
-		E4EF426521B7B6F300662CD3 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		E4EF426521B7B6F300662CD3 /* CoralAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoralAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 		E4EF425221B7ADD600662CD3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E4EF426521B7B6F300662CD3 /* Donation.swift */,
+				E4EF426521B7B6F300662CD3 /* CoralAction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 				E4EF425621B7AECB00662CD3 /* TabBarController.swift in Sources */,
 				E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */,
 				E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */,
-				E4EF426621B7B6F300662CD3 /* Donation.swift in Sources */,
+				E4EF426621B7B6F300662CD3 /* CoralAction.swift in Sources */,
 				E4EF425921B7B07900662CD3 /* HomeViewController.swift in Sources */,
 				E4EF426321B7B45E00662CD3 /* DonationTableViewCell.swift in Sources */,
 			);
