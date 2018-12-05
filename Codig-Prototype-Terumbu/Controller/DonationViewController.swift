@@ -40,7 +40,7 @@ class DonationViewController: UIViewController {
         donation1.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ex justo, interdum ac consectetur eu, rutrum vitae mi. Aenean malesuada ex eu placerat commodo."
         donation1.date = Date()
         donation1.location = "Jakarta, ID"
-        donation1.donationAmount = 150000000
+        donation1.donationAmount = 150000000.20
         
         let donation2 = CoralAction()
         donation2.title = "Second item"
@@ -54,7 +54,7 @@ class DonationViewController: UIViewController {
         donation3.description = "Integer efficitur consectetur dui, sed viverra risus pulvinar eget. Aliquam ullamcorper ullamcorper sem sit amet pulvinar. Praesent odio magna, pellentesque et fringilla non, hendrerit vitae sem. Vestibulum quis tortor at massa dapibus venenatis quis ut dui. Pellentesque eu massa commodo, scelerisque tellus vel, pellentesque orci."
         donation3.date = Date()
         donation3.location = "Kepulauan Seribu, ID"
-        donation3.donationAmount = 2250400150
+        donation3.donationAmount = 2250499735.35
         
         let donation4 = CoralAction()
         donation4.title = "Fourth item"
@@ -90,9 +90,10 @@ extension DonationViewController: UITableViewDelegate, UITableViewDataSource{
         cell.dateLabel.text = dateFormatter.string(from: donation.date)
         
         let currencyFormatter = NumberFormatter()
-        currencyFormatter.currencySymbol = "Rp"
         currencyFormatter.numberStyle = .currency
         currencyFormatter.locale = Locale(identifier: "id-ID")
+        currencyFormatter.maximumFractionDigits = 2
+        currencyFormatter.minimumFractionDigits = 2
         cell.donationAmountLabel.text = currencyFormatter.string(from: NSNumber(value: donation.donationAmount))
         
         return cell
