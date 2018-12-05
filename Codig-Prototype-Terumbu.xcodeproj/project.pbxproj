@@ -54,14 +54,38 @@
 		E4EF423D21B7ACEE00662CD3 /* Codig-Prototype-Terumbu */ = {
 			isa = PBXGroup;
 			children = (
+				E4EF425221B7ADD600662CD3 /* Model */,
+				E4EF425121B7ADD400662CD3 /* View */,
+				E4EF425021B7ADD100662CD3 /* Controller */,
 				E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */,
-				E4EF424021B7ACEE00662CD3 /* ViewController.swift */,
-				E4EF424221B7ACEE00662CD3 /* Main.storyboard */,
 				E4EF424521B7ACF000662CD3 /* Assets.xcassets */,
 				E4EF424721B7ACF000662CD3 /* LaunchScreen.storyboard */,
 				E4EF424A21B7ACF000662CD3 /* Info.plist */,
 			);
 			path = "Codig-Prototype-Terumbu";
+			sourceTree = "<group>";
+		};
+		E4EF425021B7ADD100662CD3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF424021B7ACEE00662CD3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4EF425121B7ADD400662CD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4EF424221B7ACEE00662CD3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4EF425221B7ADD600662CD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
