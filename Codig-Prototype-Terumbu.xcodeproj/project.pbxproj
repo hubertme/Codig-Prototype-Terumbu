@@ -18,6 +18,8 @@
 		E4EF426321B7B45E00662CD3 /* DonationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF426121B7B45E00662CD3 /* DonationTableViewCell.swift */; };
 		E4EF426421B7B45E00662CD3 /* DonationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EF426221B7B45E00662CD3 /* DonationTableViewCell.xib */; };
 		E4EF426621B7B6F300662CD3 /* CoralAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF426521B7B6F300662CD3 /* CoralAction.swift */; };
+		E4EF426921B7C5B900662CD3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF426721B7C5B900662CD3 /* DetailViewController.swift */; };
+		E4EF426A21B7C5B900662CD3 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EF426821B7C5B900662CD3 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		E4EF426121B7B45E00662CD3 /* DonationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationTableViewCell.swift; sourceTree = "<group>"; };
 		E4EF426221B7B45E00662CD3 /* DonationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonationTableViewCell.xib; sourceTree = "<group>"; };
 		E4EF426521B7B6F300662CD3 /* CoralAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoralAction.swift; sourceTree = "<group>"; };
+		E4EF426721B7C5B900662CD3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E4EF426821B7C5B900662CD3 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 				E4EF425721B7B07900662CD3 /* HomeViewController.swift */,
 				E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */,
 				E4EF425521B7AECB00662CD3 /* TabBarController.swift */,
+				E4EF426721B7C5B900662CD3 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 				E4EF425F21B7B43200662CD3 /* CellView */,
 				E4EF425821B7B07900662CD3 /* HomeViewController.xib */,
 				E4EF425321B7AE8F00662CD3 /* DonationViewController.xib */,
+				E4EF426821B7C5B900662CD3 /* DetailViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4EF426421B7B45E00662CD3 /* DonationTableViewCell.xib in Resources */,
+				E4EF426A21B7C5B900662CD3 /* DetailViewController.xib in Resources */,
 				E4EF424921B7ACF000662CD3 /* LaunchScreen.storyboard in Resources */,
 				E4EF425421B7AE8F00662CD3 /* DonationViewController.xib in Resources */,
 				E4EF424621B7ACF000662CD3 /* Assets.xcassets in Resources */,
@@ -201,6 +208,7 @@
 				E4EF426621B7B6F300662CD3 /* CoralAction.swift in Sources */,
 				E4EF425921B7B07900662CD3 /* HomeViewController.swift in Sources */,
 				E4EF426321B7B45E00662CD3 /* DonationTableViewCell.swift in Sources */,
+				E4EF426921B7C5B900662CD3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
