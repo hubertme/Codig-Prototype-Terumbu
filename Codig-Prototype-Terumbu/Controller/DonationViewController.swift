@@ -11,7 +11,7 @@ import UIKit
 class DonationViewController: UIViewController {
     
     var donations: Array<CoralAction> = []
-    
+
     // MARK: - Outlets
     @IBOutlet weak var donationTableView: UITableView!
     
@@ -101,6 +101,15 @@ extension DonationViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let nextVC = DetailViewController()
+        nextVC.selectedAction = donations[indexPath.row]
+        nextVC.title = donations[indexPath.row].title
+        navigationController?.pushViewController(nextVC, animated: true)
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
