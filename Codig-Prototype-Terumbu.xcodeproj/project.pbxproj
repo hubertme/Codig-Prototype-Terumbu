@@ -74,8 +74,8 @@
 		E4EF425021B7ADD100662CD3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */,
 				E4EF425721B7B07900662CD3 /* HomeViewController.swift */,
+				E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */,
 				E4EF425521B7AECB00662CD3 /* TabBarController.swift */,
 			);
 			path = Controller;
@@ -84,8 +84,8 @@
 		E4EF425121B7ADD400662CD3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E4EF425321B7AE8F00662CD3 /* DonationViewController.xib */,
 				E4EF425821B7B07900662CD3 /* HomeViewController.xib */,
+				E4EF425321B7AE8F00662CD3 /* DonationViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
