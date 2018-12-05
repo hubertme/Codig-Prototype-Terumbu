@@ -15,4 +15,5 @@ class CoralAction{
     var location: String = ""
     var date: Date = Date()
     var image: UIImage = UIImage(named: "coral-test") ?? UIImage()
+    var donationAmount: Double = 0
 }
