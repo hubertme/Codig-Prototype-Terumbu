@@ -7,10 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
-class Donation{
+class CoralAction{
     var title: String = ""
     var description: String = ""
     var location: String = ""
     var date: Date = Date()
+    var image: UIImage = UIImage(named: "coral-test") ?? UIImage()
 }
