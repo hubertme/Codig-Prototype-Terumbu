@@ -37,7 +37,11 @@ class DonationViewController: UIViewController {
     private func addDummyDonations(){
         let donation1 = CoralAction()
         donation1.title = "First item"
-        donation1.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ex justo, interdum ac consectetur eu, rutrum vitae mi. Aenean malesuada ex eu placerat commodo."
+        donation1.description = """
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ex justo, interdum ac consectetur eu, rutrum vitae mi. Aenean malesuada ex eu placerat commodo. Suspendisse nec sagittis leo. Suspendisse at felis egestas tellus ullamcorper fringilla vitae at lorem. Nulla consectetur, urna vitae euismod laoreet, lacus elit convallis nibh, mattis rhoncus ligula elit at erat. Cras sed justo blandit, tincidunt libero ac, vehicula arcu. In hac habitasse platea dictumst. Ut eu vestibulum risus. Nulla sodales tortor purus, eu faucibus lectus porta vitae. Suspendisse euismod nunc lectus. Etiam porta in nisi vitae pellentesque. Mauris blandit dolor eu libero malesuada mollis a nec enim. Praesent ullamcorper ultrices nibh nec auctor. Donec laoreet purus at erat aliquam, ut laoreet purus malesuada. Nulla sit amet mauris enim.
+        
+        Integer efficitur consectetur dui, sed viverra risus pulvinar eget. Aliquam ullamcorper ullamcorper sem sit amet pulvinar. Praesent odio magna, pellentesque et fringilla non, hendrerit vitae sem. Vestibulum quis tortor at massa dapibus venenatis quis ut dui. Pellentesque eu massa commodo, scelerisque tellus vel, pellentesque orci. Nam fermentum malesuada bibendum. Suspendisse finibus, libero non tempus maximus, libero risus ultrices ligula, vitae consequat magna est vel leo. Praesent vitae ante nec tortor ullamcorper luctus sed sed ante. Sed sagittis suscipit mauris vel lobortis. Morbi vitae bibendum massa.
+        """
         donation1.date = Date()
         donation1.location = "Jakarta, ID"
         donation1.donationAmount = 150000000.20
@@ -86,7 +90,7 @@ extension DonationViewController: UITableViewDelegate, UITableViewDataSource{
         cell.coralImageView.image = donation.image
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEE, dd/MMM/yyyy"
+        dateFormatter.dateFormat = "EEE, dd MMM yyyy"
         cell.dateLabel.text = dateFormatter.string(from: donation.date)
         
         let currencyFormatter = NumberFormatter()
