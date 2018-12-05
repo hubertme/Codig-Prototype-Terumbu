@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         pageTableView.tableFooterView = UIView()
+        pageTableView.separatorStyle = .none
     }
     
     // MARK: Private methods
