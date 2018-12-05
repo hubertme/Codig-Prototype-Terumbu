@@ -22,6 +22,7 @@
 		E4EF426A21B7C5B900662CD3 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EF426821B7C5B900662CD3 /* DetailViewController.xib */; };
 		E4EF426F21B7CCEA00662CD3 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF426D21B7CCEA00662CD3 /* DetailCell.swift */; };
 		E4EF427021B7CCEA00662CD3 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EF426E21B7CCEA00662CD3 /* DetailCell.xib */; };
+		E4EF427221B8236E00662CD3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF427121B8236E00662CD3 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E4EF426821B7C5B900662CD3 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		E4EF426D21B7CCEA00662CD3 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		E4EF426E21B7CCEA00662CD3 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		E4EF427121B8236E00662CD3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				E4EF424521B7ACF000662CD3 /* Assets.xcassets */,
 				E4EF424721B7ACF000662CD3 /* LaunchScreen.storyboard */,
 				E4EF424A21B7ACF000662CD3 /* Info.plist */,
+				E4EF427121B8236E00662CD3 /* Extension.swift */,
 			);
 			path = "Codig-Prototype-Terumbu";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4EF427221B8236E00662CD3 /* Extension.swift in Sources */,
 				E4EF425621B7AECB00662CD3 /* TabBarController.swift in Sources */,
 				E4EF426F21B7CCEA00662CD3 /* DetailCell.swift in Sources */,
 				E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */,
