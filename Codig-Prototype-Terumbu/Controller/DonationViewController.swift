@@ -10,6 +10,10 @@ import UIKit
 
 class DonationViewController: UIViewController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
     var donations: Array<CoralAction> = []
 
     // MARK: - Outlets

@@ -10,6 +10,10 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
     var selectedAction = CoralAction()
     
     // MARK: - Outlets
