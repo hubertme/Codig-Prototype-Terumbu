@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */; };
-		E4EF424121B7ACEE00662CD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF424021B7ACEE00662CD3 /* ViewController.swift */; };
+		E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */; };
 		E4EF424621B7ACF000662CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EF424521B7ACF000662CD3 /* Assets.xcassets */; };
 		E4EF424921B7ACF000662CD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4EF424721B7ACF000662CD3 /* LaunchScreen.storyboard */; };
-		E4EF425421B7AE8F00662CD3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EF425321B7AE8F00662CD3 /* ViewController.xib */; };
+		E4EF425421B7AE8F00662CD3 /* DonationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EF425321B7AE8F00662CD3 /* DonationViewController.xib */; };
 		E4EF425621B7AECB00662CD3 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF425521B7AECB00662CD3 /* TabBarController.swift */; };
+		E4EF425921B7B07900662CD3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF425721B7B07900662CD3 /* HomeViewController.swift */; };
+		E4EF425A21B7B07900662CD3 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EF425821B7B07900662CD3 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E4EF423B21B7ACEE00662CD3 /* Codig-Prototype-Terumbu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codig-Prototype-Terumbu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4EF424021B7ACEE00662CD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		E4EF424521B7ACF000662CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4EF424821B7ACF000662CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4EF424A21B7ACF000662CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E4EF425321B7AE8F00662CD3 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		E4EF425321B7AE8F00662CD3 /* DonationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonationViewController.xib; sourceTree = "<group>"; };
 		E4EF425521B7AECB00662CD3 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E4EF425721B7B07900662CD3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E4EF425821B7B07900662CD3 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +74,8 @@
 		E4EF425021B7ADD100662CD3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E4EF424021B7ACEE00662CD3 /* ViewController.swift */,
+				E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */,
+				E4EF425721B7B07900662CD3 /* HomeViewController.swift */,
 				E4EF425521B7AECB00662CD3 /* TabBarController.swift */,
 			);
 			path = Controller;
@@ -79,7 +84,8 @@
 		E4EF425121B7ADD400662CD3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E4EF425321B7AE8F00662CD3 /* ViewController.xib */,
+				E4EF425321B7AE8F00662CD3 /* DonationViewController.xib */,
+				E4EF425821B7B07900662CD3 /* HomeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,8 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4EF424921B7ACF000662CD3 /* LaunchScreen.storyboard in Resources */,
-				E4EF425421B7AE8F00662CD3 /* ViewController.xib in Resources */,
+				E4EF425421B7AE8F00662CD3 /* DonationViewController.xib in Resources */,
 				E4EF424621B7ACF000662CD3 /* Assets.xcassets in Resources */,
+				E4EF425A21B7B07900662CD3 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,8 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4EF425621B7AECB00662CD3 /* TabBarController.swift in Sources */,
-				E4EF424121B7ACEE00662CD3 /* ViewController.swift in Sources */,
+				E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */,
 				E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */,
+				E4EF425921B7B07900662CD3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
