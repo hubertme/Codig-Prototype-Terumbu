@@ -17,10 +17,14 @@ class DonationTableViewCell: UITableViewCell {
     static var nib: UINib{
         return UINib(nibName: cellDescription, bundle: nil)
     }
-
+    
+    // MARK: - Outlets
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
-    
 }

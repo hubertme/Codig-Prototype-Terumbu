@@ -10,11 +10,14 @@ import UIKit
 
 class DonationViewController: UIViewController {
     
+    var donations: Array<Donation> = []
+    
     // MARK: - Outlets
     @IBOutlet weak var donationTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addDummyDonations()
         
         donationTableView.register(DonationTableViewCell.nib, forCellReuseIdentifier: DonationTableViewCell.cellDescription)
         donationTableView.tableFooterView = UIView()
@@ -29,16 +32,58 @@ class DonationViewController: UIViewController {
         navigationController?.navigationBar.topItem?.title = "Donasiku"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
+    // Add donations for testing purposes only
+    private func addDummyDonations(){
+        let donation1 = Donation()
+        donation1.title = "First item"
+        donation1.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ex justo, interdum ac consectetur eu, rutrum vitae mi. Aenean malesuada ex eu placerat commodo."
+        donation1.date = Date()
+        donation1.location = "Jakarta, ID"
+        
+        let donation2 = Donation()
+        donation2.title = "Second item"
+        donation2.description = "Suspendisse nec sagittis leo. Suspendisse at felis egestas tellus ullamcorper fringilla vitae at lorem. Nulla consectetur, urna vitae euismod laoreet, lacus elit convallis nibh, mattis rhoncus ligula elit at erat. Cras sed justo blandit, tincidunt libero ac, vehicula arcu. In hac habitasse platea dictumst. Ut eu vestibulum risus. Nulla sodales tortor purus, eu faucibus lectus porta vitae. Suspendisse euismod nunc lectus. Etiam porta in nisi vitae pellentesque. Mauris blandit dolor eu libero malesuada mollis a nec enim. Praesent ullamcorper ultrices nibh nec auctor. Donec laoreet purus at erat aliquam, ut laoreet purus malesuada. Nulla sit amet mauris enim."
+        donation2.date = Date()
+        donation2.location = "Tangerang, ID"
+        
+        let donation3 = Donation()
+        donation3.title = "Third item"
+        donation3.description = "Integer efficitur consectetur dui, sed viverra risus pulvinar eget. Aliquam ullamcorper ullamcorper sem sit amet pulvinar. Praesent odio magna, pellentesque et fringilla non, hendrerit vitae sem. Vestibulum quis tortor at massa dapibus venenatis quis ut dui. Pellentesque eu massa commodo, scelerisque tellus vel, pellentesque orci."
+        donation3.date = Date()
+        donation3.location = "Kepulauan Seribu, ID"
+        
+        let donation4 = Donation()
+        donation4.title = "Fourth item"
+        donation4.description = "Morbi vitae bibendum massa."
+        donation4.date = Date()
+        donation4.location = "Pontianak, ID"
+        
+        donations.append(donation1)
+        donations.append(donation2)
+        donations.append(donation3)
+        donations.append(donation4)
+    }
 }
 
 // MARK: -
 extension DonationViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return donations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = donationTableView.dequeueReusableCell(withIdentifier: DonationTableViewCell.cellDescription, for: indexPath)
+        let cell = donationTableView.dequeueReusableCell(withIdentifier: DonationTableViewCell.cellDescription, for: indexPath) as! DonationTableViewCell
+        let donation = donations[indexPath.row]
+        
+        cell.titleLabel.text = donation.title
+        cell.descriptionLabel.text = donation.description
+        cell.locationLabel.text = donation.location
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEE, dd/MMM/yyyy"
+        cell.dateLabel.text = dateFormatter.string(from: donation.date)
+        
         return cell
     }
     
