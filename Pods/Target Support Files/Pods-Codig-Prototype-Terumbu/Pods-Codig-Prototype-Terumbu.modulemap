@@ -1,0 +1,6 @@
+framework module Pods_Codig_Prototype_Terumbu {
+  umbrella header "Pods-Codig-Prototype-Terumbu-umbrella.h"
+
+  export *
+  module * { export * }
+}

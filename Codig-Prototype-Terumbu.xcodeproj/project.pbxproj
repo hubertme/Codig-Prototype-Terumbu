@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FD2E748F1CA2F4F7B546CAC /* Pods_Codig_Prototype_Terumbu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA3DE3BDA7EE7C89E996C4 /* Pods_Codig_Prototype_Terumbu.framework */; };
 		E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */; };
 		E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */; };
 		E4EF424621B7ACF000662CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EF424521B7ACF000662CD3 /* Assets.xcassets */; };
@@ -26,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14FA3DE3BDA7EE7C89E996C4 /* Pods_Codig_Prototype_Terumbu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codig_Prototype_Terumbu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA5F6F7D66E9463B74A2A5F /* Pods-Codig-Prototype-Terumbu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codig-Prototype-Terumbu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codig-Prototype-Terumbu/Pods-Codig-Prototype-Terumbu.release.xcconfig"; sourceTree = "<group>"; };
+		3DE592934E2B50B98DC0348F /* Pods-Codig-Prototype-Terumbu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codig-Prototype-Terumbu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codig-Prototype-Terumbu/Pods-Codig-Prototype-Terumbu.debug.xcconfig"; sourceTree = "<group>"; };
 		E4EF423B21B7ACEE00662CD3 /* Codig-Prototype-Terumbu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codig-Prototype-Terumbu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
@@ -51,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD2E748F1CA2F4F7B546CAC /* Pods_Codig_Prototype_Terumbu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		448F4CF2821054D7C0DE2F3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14FA3DE3BDA7EE7C89E996C4 /* Pods_Codig_Prototype_Terumbu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7682B7DF2065743F41D043A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DE592934E2B50B98DC0348F /* Pods-Codig-Prototype-Terumbu.debug.xcconfig */,
+				2BA5F6F7D66E9463B74A2A5F /* Pods-Codig-Prototype-Terumbu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E4EF423221B7ACEE00662CD3 = {
 			isa = PBXGroup;
 			children = (
 				E4EF423D21B7ACEE00662CD3 /* Codig-Prototype-Terumbu */,
 				E4EF423C21B7ACEE00662CD3 /* Products */,
+				7682B7DF2065743F41D043A0 /* Pods */,
+				448F4CF2821054D7C0DE2F3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4EF424D21B7ACF000662CD3 /* Build configuration list for PBXNativeTarget "Codig-Prototype-Terumbu" */;
 			buildPhases = (
+				A28AD7DC96CDF3099B7FC443 /* [CP] Check Pods Manifest.lock */,
 				E4EF423721B7ACEE00662CD3 /* Sources */,
 				E4EF423821B7ACEE00662CD3 /* Frameworks */,
 				E4EF423921B7ACEE00662CD3 /* Resources */,
+				FF96DB654CB66B8F3AE6B2C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +232,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A28AD7DC96CDF3099B7FC443 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Codig-Prototype-Terumbu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF96DB654CB66B8F3AE6B2C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Codig-Prototype-Terumbu/Pods-Codig-Prototype-Terumbu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Codig-Prototype-Terumbu/Pods-Codig-Prototype-Terumbu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4EF423721B7ACEE00662CD3 /* Sources */ = {
@@ -356,6 +421,7 @@
 		};
 		E4EF424E21B7ACF000662CD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE592934E2B50B98DC0348F /* Pods-Codig-Prototype-Terumbu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +441,7 @@
 		};
 		E4EF424F21B7ACF000662CD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BA5F6F7D66E9463B74A2A5F /* Pods-Codig-Prototype-Terumbu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
