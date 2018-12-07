@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="324" height="187"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coral-news" translatesAutoresizingMaskIntoConstraints="NO" id="1VP-aJ-aF6">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1VP-aJ-aF6">
                         <rect key="frame" x="0.0" y="0.0" width="340" height="187"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
@@ -50,7 +50,4 @@
             <point key="canvasLocation" x="297.60000000000002" y="213.64317841079463"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="coral-news" width="4608" height="3456"/>
-    </resources>
 </document>
