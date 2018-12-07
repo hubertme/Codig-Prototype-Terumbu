@@ -14,6 +14,10 @@
 		E45C528D21BAC62D00C682B9 /* LocationCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C528B21BAC62D00C682B9 /* LocationCardCell.xib */; };
 		E45C529021BAD40700C682B9 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C528E21BAD40700C682B9 /* PersonalViewController.swift */; };
 		E45C529121BAD40700C682B9 /* PersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C528F21BAD40700C682B9 /* PersonalViewController.xib */; };
+		E45C529421BAD5E000C682B9 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C529221BAD5E000C682B9 /* NewsViewController.swift */; };
+		E45C529521BAD5E000C682B9 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C529321BAD5E000C682B9 /* NewsViewController.xib */; };
+		E45C529821BAD6A500C682B9 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C529621BAD6A500C682B9 /* NewsCell.swift */; };
+		E45C529921BAD6A500C682B9 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C529721BAD6A500C682B9 /* NewsCell.xib */; };
 		E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */; };
 		E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */; };
 		E4EF424621B7ACF000662CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EF424521B7ACF000662CD3 /* Assets.xcassets */; };
@@ -44,6 +48,10 @@
 		E45C528B21BAC62D00C682B9 /* LocationCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCardCell.xib; sourceTree = "<group>"; };
 		E45C528E21BAD40700C682B9 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
 		E45C528F21BAD40700C682B9 /* PersonalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalViewController.xib; sourceTree = "<group>"; };
+		E45C529221BAD5E000C682B9 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		E45C529321BAD5E000C682B9 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		E45C529621BAD6A500C682B9 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		E45C529721BAD6A500C682B9 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		E4EF423B21B7ACEE00662CD3 /* Codig-Prototype-Terumbu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codig-Prototype-Terumbu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +156,7 @@
 				E4EF425521B7AECB00662CD3 /* TabBarController.swift */,
 				E4EF426721B7C5B900662CD3 /* DetailViewController.swift */,
 				E45C528E21BAD40700C682B9 /* PersonalViewController.swift */,
+				E45C529221BAD5E000C682B9 /* NewsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,6 +170,7 @@
 				E4EF425321B7AE8F00662CD3 /* DonationViewController.xib */,
 				E4EF426821B7C5B900662CD3 /* DetailViewController.xib */,
 				E45C528F21BAD40700C682B9 /* PersonalViewController.xib */,
+				E45C529321BAD5E000C682B9 /* NewsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +187,7 @@
 		E4EF425F21B7B43200662CD3 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				E45C529721BAD6A500C682B9 /* NewsCell.xib */,
 				E4EF426221B7B45E00662CD3 /* DonationTableViewCell.xib */,
 				E4EF426E21B7CCEA00662CD3 /* DetailCell.xib */,
 			);
@@ -188,6 +199,7 @@
 			children = (
 				E4EF426121B7B45E00662CD3 /* DonationTableViewCell.swift */,
 				E4EF426D21B7CCEA00662CD3 /* DetailCell.swift */,
+				E45C529621BAD6A500C682B9 /* NewsCell.swift */,
 			);
 			path = TableCellController;
 			sourceTree = "<group>";
@@ -271,9 +283,11 @@
 			files = (
 				E45C528921BAA92B00C682B9 /* NewsCardCell.xib in Resources */,
 				E45C528D21BAC62D00C682B9 /* LocationCardCell.xib in Resources */,
+				E45C529521BAD5E000C682B9 /* NewsViewController.xib in Resources */,
 				E4EF426421B7B45E00662CD3 /* DonationTableViewCell.xib in Resources */,
 				E4EF426A21B7C5B900662CD3 /* DetailViewController.xib in Resources */,
 				E4EF424921B7ACF000662CD3 /* LaunchScreen.storyboard in Resources */,
+				E45C529921BAD6A500C682B9 /* NewsCell.xib in Resources */,
 				E4EF425421B7AE8F00662CD3 /* DonationViewController.xib in Resources */,
 				E4EF427021B7CCEA00662CD3 /* DetailCell.xib in Resources */,
 				E4EF424621B7ACF000662CD3 /* Assets.xcassets in Resources */,
@@ -331,8 +345,10 @@
 				E4EF427221B8236E00662CD3 /* Extension.swift in Sources */,
 				FC0BDAD221BA44DD002054C6 /* Report.swift in Sources */,
 				E4EF425621B7AECB00662CD3 /* TabBarController.swift in Sources */,
+				E45C529421BAD5E000C682B9 /* NewsViewController.swift in Sources */,
 				E4EF426F21B7CCEA00662CD3 /* DetailCell.swift in Sources */,
 				E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */,
+				E45C529821BAD6A500C682B9 /* NewsCell.swift in Sources */,
 				E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */,
 				E45C529021BAD40700C682B9 /* PersonalViewController.swift in Sources */,
 				E4EF425921B7B07900662CD3 /* HomeViewController.swift in Sources */,
