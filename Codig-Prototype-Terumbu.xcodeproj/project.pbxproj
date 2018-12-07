@@ -26,6 +26,8 @@
 		FC0BDAD221BA44DD002054C6 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDAD121BA44DD002054C6 /* Report.swift */; };
 		FC0BDAD421BA46C7002054C6 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDAD321BA46C6002054C6 /* Campaign.swift */; };
 		FC0BDAD721BA4D2B002054C6 /* GlobalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDAD621BA4D2B002054C6 /* GlobalStyle.swift */; };
+		FC0BDADC21BA8464002054C6 /* NewsCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDADA21BA8464002054C6 /* NewsCardCell.swift */; };
+		FC0BDADD21BA8464002054C6 /* NewsCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0BDADB21BA8464002054C6 /* NewsCardCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		FC0BDAD121BA44DD002054C6 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		FC0BDAD321BA46C6002054C6 /* Campaign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		FC0BDAD621BA4D2B002054C6 /* GlobalStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStyle.swift; sourceTree = "<group>"; };
+		FC0BDADA21BA8464002054C6 /* NewsCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardCell.swift; sourceTree = "<group>"; };
+		FC0BDADB21BA8464002054C6 /* NewsCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCardCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,8 @@
 		FC0BDAD821BA7B0C002054C6 /* CollectionCellController */ = {
 			isa = PBXGroup;
 			children = (
+				FC0BDADA21BA8464002054C6 /* NewsCardCell.swift */,
+				FC0BDADB21BA8464002054C6 /* NewsCardCell.xib */,
 			);
 			path = CollectionCellController;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0BDADD21BA8464002054C6 /* NewsCardCell.xib in Resources */,
 				E4EF426421B7B45E00662CD3 /* DonationTableViewCell.xib in Resources */,
 				E4EF426A21B7C5B900662CD3 /* DetailViewController.xib in Resources */,
 				E4EF424921B7ACF000662CD3 /* LaunchScreen.storyboard in Resources */,
@@ -315,6 +322,7 @@
 				E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */,
 				E4EF425921B7B07900662CD3 /* HomeViewController.swift in Sources */,
 				E4EF426321B7B45E00662CD3 /* DonationTableViewCell.swift in Sources */,
+				FC0BDADC21BA8464002054C6 /* NewsCardCell.swift in Sources */,
 				E4EF426921B7C5B900662CD3 /* DetailViewController.swift in Sources */,
 				FC0BDAD721BA4D2B002054C6 /* GlobalStyle.swift in Sources */,
 				FC0BDAD421BA46C7002054C6 /* Campaign.swift in Sources */,
