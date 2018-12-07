@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+//import ChameleonFramework
 import ChameleonFramework
 
-let primaryColour = UIColor.flatSkyBlueColorDark()
+let primaryColour = UIColor.flatSkyBlueDark
+let secondaryColour = UIColor.flatSkyBlue
