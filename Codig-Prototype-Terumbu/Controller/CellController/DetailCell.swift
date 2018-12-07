@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class DetailCell: UITableViewCell {
     
@@ -20,16 +21,29 @@ class DetailCell: UITableViewCell {
     
     // MARK: - Outlets
     @IBOutlet weak var coralImageView: UIImageView!
+    
     @IBOutlet weak var donationAmountLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var picLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var latestReportLabel: UILabel!
+    
+    @IBOutlet weak var readMoreButton: UIButton!
     @IBOutlet weak var donateButton: UIButton!
+    
+    @IBOutlet var titlesLabel: [UILabel]!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         donateButton.clipsToBounds = true
         donateButton.layer.cornerRadius = 10
+        donateButton.backgroundColor = primaryColour
+        readMoreButton.tintColor = primaryColour
+        
+        for titleLabel in titlesLabel{
+            titleLabel.textColor = primaryColour
+        }
     }
 }
