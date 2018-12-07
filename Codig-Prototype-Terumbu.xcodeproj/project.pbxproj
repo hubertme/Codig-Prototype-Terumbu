@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AE8687E74C3463D202D4C0F /* Pods_Codig_Prototype_Terumbu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC4820AFB1798F26C0FD571 /* Pods_Codig_Prototype_Terumbu.framework */; };
 		E45C528821BAA92B00C682B9 /* NewsCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C528621BAA92B00C682B9 /* NewsCardCell.swift */; };
 		E45C528921BAA92B00C682B9 /* NewsCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C528721BAA92B00C682B9 /* NewsCardCell.xib */; };
 		E45C528C21BAC62D00C682B9 /* LocationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C528A21BAC62D00C682B9 /* LocationCardCell.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		2BA5F6F7D66E9463B74A2A5F /* Pods-Codig-Prototype-Terumbu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codig-Prototype-Terumbu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codig-Prototype-Terumbu/Pods-Codig-Prototype-Terumbu.release.xcconfig"; sourceTree = "<group>"; };
 		3DE592934E2B50B98DC0348F /* Pods-Codig-Prototype-Terumbu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codig-Prototype-Terumbu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codig-Prototype-Terumbu/Pods-Codig-Prototype-Terumbu.debug.xcconfig"; sourceTree = "<group>"; };
+		5FC4820AFB1798F26C0FD571 /* Pods_Codig_Prototype_Terumbu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codig_Prototype_Terumbu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45C528621BAA92B00C682B9 /* NewsCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardCell.swift; sourceTree = "<group>"; };
 		E45C528721BAA92B00C682B9 /* NewsCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCardCell.xib; sourceTree = "<group>"; };
 		E45C528A21BAC62D00C682B9 /* LocationCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCardCell.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE8687E74C3463D202D4C0F /* Pods_Codig_Prototype_Terumbu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +93,14 @@
 				2BA5F6F7D66E9463B74A2A5F /* Pods-Codig-Prototype-Terumbu.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D96872536B1BBEAFDFD448D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FC4820AFB1798F26C0FD571 /* Pods_Codig_Prototype_Terumbu.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E45C528521BAA8D200C682B9 /* CollectionViewCell */ = {
@@ -107,6 +118,7 @@
 				E4EF423D21B7ACEE00662CD3 /* Codig-Prototype-Terumbu */,
 				E4EF423C21B7ACEE00662CD3 /* Products */,
 				7682B7DF2065743F41D043A0 /* Pods */,
+				D96872536B1BBEAFDFD448D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
