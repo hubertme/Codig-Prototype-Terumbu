@@ -10,6 +10,8 @@
 		9FD2E748F1CA2F4F7B546CAC /* Pods_Codig_Prototype_Terumbu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA3DE3BDA7EE7C89E996C4 /* Pods_Codig_Prototype_Terumbu.framework */; };
 		E45C528821BAA92B00C682B9 /* NewsCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C528621BAA92B00C682B9 /* NewsCardCell.swift */; };
 		E45C528921BAA92B00C682B9 /* NewsCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C528721BAA92B00C682B9 /* NewsCardCell.xib */; };
+		E45C528C21BAC62D00C682B9 /* LocationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C528A21BAC62D00C682B9 /* LocationCardCell.swift */; };
+		E45C528D21BAC62D00C682B9 /* LocationCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C528B21BAC62D00C682B9 /* LocationCardCell.xib */; };
 		E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */; };
 		E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */; };
 		E4EF424621B7ACF000662CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EF424521B7ACF000662CD3 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 		3DE592934E2B50B98DC0348F /* Pods-Codig-Prototype-Terumbu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codig-Prototype-Terumbu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codig-Prototype-Terumbu/Pods-Codig-Prototype-Terumbu.debug.xcconfig"; sourceTree = "<group>"; };
 		E45C528621BAA92B00C682B9 /* NewsCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardCell.swift; sourceTree = "<group>"; };
 		E45C528721BAA92B00C682B9 /* NewsCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCardCell.xib; sourceTree = "<group>"; };
+		E45C528A21BAC62D00C682B9 /* LocationCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCardCell.swift; sourceTree = "<group>"; };
+		E45C528B21BAC62D00C682B9 /* LocationCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCardCell.xib; sourceTree = "<group>"; };
 		E4EF423B21B7ACEE00662CD3 /* Codig-Prototype-Terumbu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codig-Prototype-Terumbu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				E45C528721BAA92B00C682B9 /* NewsCardCell.xib */,
+				E45C528B21BAC62D00C682B9 /* LocationCardCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				E45C528621BAA92B00C682B9 /* NewsCardCell.swift */,
+				E45C528A21BAC62D00C682B9 /* LocationCardCell.swift */,
 			);
 			path = CollectionCellController;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45C528921BAA92B00C682B9 /* NewsCardCell.xib in Resources */,
+				E45C528D21BAC62D00C682B9 /* LocationCardCell.xib in Resources */,
 				E4EF426421B7B45E00662CD3 /* DonationTableViewCell.xib in Resources */,
 				E4EF426A21B7C5B900662CD3 /* DetailViewController.xib in Resources */,
 				E4EF424921B7ACF000662CD3 /* LaunchScreen.storyboard in Resources */,
@@ -321,6 +328,7 @@
 				E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */,
 				E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */,
 				E4EF425921B7B07900662CD3 /* HomeViewController.swift in Sources */,
+				E45C528C21BAC62D00C682B9 /* LocationCardCell.swift in Sources */,
 				E4EF426321B7B45E00662CD3 /* DonationTableViewCell.swift in Sources */,
 				E45C528821BAA92B00C682B9 /* NewsCardCell.swift in Sources */,
 				E4EF426921B7C5B900662CD3 /* DetailViewController.swift in Sources */,
