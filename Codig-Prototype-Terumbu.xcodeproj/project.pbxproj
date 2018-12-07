@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9FD2E748F1CA2F4F7B546CAC /* Pods_Codig_Prototype_Terumbu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FA3DE3BDA7EE7C89E996C4 /* Pods_Codig_Prototype_Terumbu.framework */; };
+		E45C528821BAA92B00C682B9 /* NewsCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C528621BAA92B00C682B9 /* NewsCardCell.swift */; };
+		E45C528921BAA92B00C682B9 /* NewsCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C528721BAA92B00C682B9 /* NewsCardCell.xib */; };
 		E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */; };
 		E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */; };
 		E4EF424621B7ACF000662CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EF424521B7ACF000662CD3 /* Assets.xcassets */; };
@@ -26,14 +28,14 @@
 		FC0BDAD221BA44DD002054C6 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDAD121BA44DD002054C6 /* Report.swift */; };
 		FC0BDAD421BA46C7002054C6 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDAD321BA46C6002054C6 /* Campaign.swift */; };
 		FC0BDAD721BA4D2B002054C6 /* GlobalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDAD621BA4D2B002054C6 /* GlobalStyle.swift */; };
-		FC0BDADC21BA8464002054C6 /* NewsCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDADA21BA8464002054C6 /* NewsCardCell.swift */; };
-		FC0BDADD21BA8464002054C6 /* NewsCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0BDADB21BA8464002054C6 /* NewsCardCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14FA3DE3BDA7EE7C89E996C4 /* Pods_Codig_Prototype_Terumbu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codig_Prototype_Terumbu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA5F6F7D66E9463B74A2A5F /* Pods-Codig-Prototype-Terumbu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codig-Prototype-Terumbu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codig-Prototype-Terumbu/Pods-Codig-Prototype-Terumbu.release.xcconfig"; sourceTree = "<group>"; };
 		3DE592934E2B50B98DC0348F /* Pods-Codig-Prototype-Terumbu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codig-Prototype-Terumbu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codig-Prototype-Terumbu/Pods-Codig-Prototype-Terumbu.debug.xcconfig"; sourceTree = "<group>"; };
+		E45C528621BAA92B00C682B9 /* NewsCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardCell.swift; sourceTree = "<group>"; };
+		E45C528721BAA92B00C682B9 /* NewsCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCardCell.xib; sourceTree = "<group>"; };
 		E4EF423B21B7ACEE00662CD3 /* Codig-Prototype-Terumbu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codig-Prototype-Terumbu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +56,6 @@
 		FC0BDAD121BA44DD002054C6 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		FC0BDAD321BA46C6002054C6 /* Campaign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
 		FC0BDAD621BA4D2B002054C6 /* GlobalStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStyle.swift; sourceTree = "<group>"; };
-		FC0BDADA21BA8464002054C6 /* NewsCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardCell.swift; sourceTree = "<group>"; };
-		FC0BDADB21BA8464002054C6 /* NewsCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCardCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +85,14 @@
 				2BA5F6F7D66E9463B74A2A5F /* Pods-Codig-Prototype-Terumbu.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E45C528521BAA8D200C682B9 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E45C528721BAA92B00C682B9 /* NewsCardCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		E4EF423221B7ACEE00662CD3 = {
@@ -137,7 +145,7 @@
 		E4EF425121B7ADD400662CD3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FC0BDAD921BA7B24002054C6 /* CollectionViewCell */,
+				E45C528521BAA8D200C682B9 /* CollectionViewCell */,
 				E4EF425F21B7B43200662CD3 /* TableViewCell */,
 				E4EF425821B7B07900662CD3 /* HomeViewController.xib */,
 				E4EF425321B7AE8F00662CD3 /* DonationViewController.xib */,
@@ -184,17 +192,9 @@
 		FC0BDAD821BA7B0C002054C6 /* CollectionCellController */ = {
 			isa = PBXGroup;
 			children = (
-				FC0BDADA21BA8464002054C6 /* NewsCardCell.swift */,
-				FC0BDADB21BA8464002054C6 /* NewsCardCell.xib */,
+				E45C528621BAA92B00C682B9 /* NewsCardCell.swift */,
 			);
 			path = CollectionCellController;
-			sourceTree = "<group>";
-		};
-		FC0BDAD921BA7B24002054C6 /* CollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC0BDADD21BA8464002054C6 /* NewsCardCell.xib in Resources */,
+				E45C528921BAA92B00C682B9 /* NewsCardCell.xib in Resources */,
 				E4EF426421B7B45E00662CD3 /* DonationTableViewCell.xib in Resources */,
 				E4EF426A21B7C5B900662CD3 /* DetailViewController.xib in Resources */,
 				E4EF424921B7ACF000662CD3 /* LaunchScreen.storyboard in Resources */,
@@ -322,7 +322,7 @@
 				E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */,
 				E4EF425921B7B07900662CD3 /* HomeViewController.swift in Sources */,
 				E4EF426321B7B45E00662CD3 /* DonationTableViewCell.swift in Sources */,
-				FC0BDADC21BA8464002054C6 /* NewsCardCell.swift in Sources */,
+				E45C528821BAA92B00C682B9 /* NewsCardCell.swift in Sources */,
 				E4EF426921B7C5B900662CD3 /* DetailViewController.swift in Sources */,
 				FC0BDAD721BA4D2B002054C6 /* GlobalStyle.swift in Sources */,
 				FC0BDAD421BA46C7002054C6 /* Campaign.swift in Sources */,

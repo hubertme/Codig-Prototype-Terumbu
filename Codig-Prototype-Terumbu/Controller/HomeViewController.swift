@@ -27,6 +27,14 @@ class HomeViewController: UIViewController {
         for headingLabel in headingLabels{
             headingLabel.textColor = primaryColour
         }
+        
+        // Set delegate and data source
+        newsCollectionView.delegate = self
+        newsCollectionView.dataSource = self
+//        locationCollectionView.delegate = self
+//        locationCollectionView.dataSource = self
+        
+        newsCollectionView.register(NewsCardCell.nib, forCellWithReuseIdentifier: NewsCardCell.cellDescription)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,5 +58,27 @@ class HomeViewController: UIViewController {
         tabBarController?.tabBar.barTintColor = primaryColour
         tabBarController?.tabBar.unselectedItemTintColor = .lightGray
     }
+}
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return collectionView.tag == 0 ? 7 : 1
+    }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if (collectionView.tag == 0){
+            let newsCell = newsCollectionView.dequeueReusableCell(withReuseIdentifier: NewsCardCell.cellDescription, for: indexPath)
+            return newsCell
+        }
+        return UICollectionViewCell()
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if (collectionView.tag == 0){
+            return CGSize(width: 340, height: 187)
+        }
+        return CGSize(width: 0, height: 0)
+    }
 }
