@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class HomeViewController: UIViewController {
     
@@ -20,7 +21,6 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         setupNavigationBar()
-        setupNavigationBar()
         setupTabBar()
     }
     
@@ -28,7 +28,7 @@ class HomeViewController: UIViewController {
     private func setupNavigationBar(){
         navigationController?.navigationBar.topItem?.title = "Terumbu"
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.1098039216, green: 0.7294117647, blue: 1, alpha: 1)
+        navigationController?.navigationBar.barTintColor = barTintColour
         navigationController?.navigationBar.tintColor = .white
         
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
@@ -37,7 +37,8 @@ class HomeViewController: UIViewController {
     
     private func setupTabBar(){
         tabBarController?.tabBar.tintColor = .white
-        tabBarController?.tabBar.barTintColor = #colorLiteral(red: 0, green: 0.7427282333, blue: 1, alpha: 1)
+        tabBarController?.tabBar.barTintColor = barTintColour
+        tabBarController?.tabBar.unselectedItemTintColor = .lightGray
     }
     
 }
