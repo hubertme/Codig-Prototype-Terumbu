@@ -12,7 +12,7 @@ import ChameleonFramework
 class HomeViewController: UIViewController {
     
     // MARK: - Dummy data
-    let newsTitleData: Array<String> = ["Save our corals!", "Two coral reefs known broken in a beach", "Coral plantation is the future of saving corals", "Crowdfunding as the solution for saving environment", "New method of coral farming is under research"]
+    let newsTitleData: Array<String> = ["Coral Reef Damage in Indonesia Reaches 46 Percent", "Two coral reefs known broken in a beach", "Coral plantation is the future of saving corals", "Crowdfunding as the solution for saving environment", "New method of coral farming is under research"]
     let locationData: Array<String> = ["Maluku", "Jakarta", "Banten", "Papua", "Sumatera", "Kalimantan", "Sulawesi", "Bali", "Jawa", "Kepulauan Seribu"]
     var amountOfPeople = 99726
     
@@ -95,6 +95,15 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             locationCell.locationLabel.text = locationData[indexPath.item]
             locationCell.locationImageView.image = UIImage(named: "location\(indexPath.item)")
             return locationCell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if (collectionView.tag == 0){
+            if (indexPath.item == 0){
+                let newsVC = NewsViewController()
+                navigationController?.pushViewController(newsVC, animated: true)
+            }
         }
     }
 }
