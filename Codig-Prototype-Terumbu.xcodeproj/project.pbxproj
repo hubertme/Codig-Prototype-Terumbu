@@ -120,7 +120,8 @@
 		E4EF425021B7ADD100662CD3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E4EF426021B7B44100662CD3 /* CellController */,
+				FC0BDAD821BA7B0C002054C6 /* CollectionCellController */,
+				E4EF426021B7B44100662CD3 /* TableCellController */,
 				E4EF425721B7B07900662CD3 /* HomeViewController.swift */,
 				E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */,
 				E4EF425521B7AECB00662CD3 /* TabBarController.swift */,
@@ -132,7 +133,8 @@
 		E4EF425121B7ADD400662CD3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E4EF425F21B7B43200662CD3 /* CellView */,
+				FC0BDAD921BA7B24002054C6 /* CollectionViewCell */,
+				E4EF425F21B7B43200662CD3 /* TableViewCell */,
 				E4EF425821B7B07900662CD3 /* HomeViewController.xib */,
 				E4EF425321B7AE8F00662CD3 /* DonationViewController.xib */,
 				E4EF426821B7C5B900662CD3 /* DetailViewController.xib */,
@@ -149,22 +151,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E4EF425F21B7B43200662CD3 /* CellView */ = {
+		E4EF425F21B7B43200662CD3 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				E4EF426221B7B45E00662CD3 /* DonationTableViewCell.xib */,
 				E4EF426E21B7CCEA00662CD3 /* DetailCell.xib */,
 			);
-			path = CellView;
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		E4EF426021B7B44100662CD3 /* CellController */ = {
+		E4EF426021B7B44100662CD3 /* TableCellController */ = {
 			isa = PBXGroup;
 			children = (
 				E4EF426121B7B45E00662CD3 /* DonationTableViewCell.swift */,
 				E4EF426D21B7CCEA00662CD3 /* DetailCell.swift */,
 			);
-			path = CellController;
+			path = TableCellController;
 			sourceTree = "<group>";
 		};
 		FC0BDAD521BA4D16002054C6 /* Resources */ = {
@@ -173,6 +175,20 @@
 				FC0BDAD621BA4D2B002054C6 /* GlobalStyle.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC0BDAD821BA7B0C002054C6 /* CollectionCellController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionCellController;
+			sourceTree = "<group>";
+		};
+		FC0BDAD921BA7B24002054C6 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
