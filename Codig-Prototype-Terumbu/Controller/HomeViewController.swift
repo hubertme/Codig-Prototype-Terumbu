@@ -12,7 +12,7 @@ import ChameleonFramework
 class HomeViewController: UIViewController {
     
     // MARK: - Dummy data
-    let newsTitleData: Array<String> = ["Save our corals!", "Two coral reefs known missing in a beach", "Coral plantation is the future of saving corals", "Crowdfunding as the solution for saving environment"]
+    let newsTitleData: Array<String> = ["Save our corals!", "Two coral reefs known broken in a beach", "Coral plantation is the future of saving corals", "Crowdfunding as the solution for saving environment", "New method of coral farming is under research"]
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
@@ -72,6 +72,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if (collectionView.tag == 0){
             let newsCell = newsCollectionView.dequeueReusableCell(withReuseIdentifier: NewsCardCell.cellDescription, for: indexPath) as! NewsCardCell
             newsCell.newsTitleLabel.text = newsTitleData[indexPath.item]
+            newsCell.newsImageView.image = UIImage(named: "news-image\(indexPath.item)")
             return newsCell
         }
         return UICollectionViewCell()
