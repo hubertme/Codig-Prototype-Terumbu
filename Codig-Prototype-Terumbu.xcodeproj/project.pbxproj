@@ -24,6 +24,7 @@
 		E4EF426F21B7CCEA00662CD3 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF426D21B7CCEA00662CD3 /* DetailCell.swift */; };
 		E4EF427021B7CCEA00662CD3 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4EF426E21B7CCEA00662CD3 /* DetailCell.xib */; };
 		E4EF427221B8236E00662CD3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF427121B8236E00662CD3 /* Extension.swift */; };
+		FC0BDAD221BA44DD002054C6 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDAD121BA44DD002054C6 /* Report.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		E4EF426D21B7CCEA00662CD3 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		E4EF426E21B7CCEA00662CD3 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
 		E4EF427121B8236E00662CD3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		FC0BDAD121BA44DD002054C6 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				E4EF426521B7B6F300662CD3 /* CoralAction.swift */,
+				FC0BDAD121BA44DD002054C6 /* Report.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4EF427221B8236E00662CD3 /* Extension.swift in Sources */,
+				FC0BDAD221BA44DD002054C6 /* Report.swift in Sources */,
 				E4EF425621B7AECB00662CD3 /* TabBarController.swift in Sources */,
 				E4EF426F21B7CCEA00662CD3 /* DetailCell.swift in Sources */,
 				E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */,
