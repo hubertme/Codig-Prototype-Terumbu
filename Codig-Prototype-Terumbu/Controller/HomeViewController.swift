@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Dummy data
     let newsTitleData: Array<String> = ["Save our corals!", "Two coral reefs known broken in a beach", "Coral plantation is the future of saving corals", "Crowdfunding as the solution for saving environment", "New method of coral farming is under research"]
+    let locationData: Array<String> = ["Maluku", "Jakarta", "Banten", "Papua", "Sumatera", "Kalimantan", "Sulawesi", "Bali", "Jawa", "Kepulauan Seribu"]
     var amountOfPeople = 99726
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
@@ -36,13 +37,14 @@ class HomeViewController: UIViewController {
         // Set delegate and data source
         newsCollectionView.delegate = self
         newsCollectionView.dataSource = self
-//        locationCollectionView.delegate = self
-//        locationCollectionView.dataSource = self
+        locationCollectionView.delegate = self
+        locationCollectionView.dataSource = self
         
         newsCollectionView.register(NewsCardCell.nib, forCellWithReuseIdentifier: NewsCardCell.cellDescription)
+        locationCollectionView.register(LocationCardCell.nib, forCellWithReuseIdentifier: LocationCardCell.cellDescription)
         
         // Animating label
-        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateAmountLabel), userInfo: nil, repeats: true)
+//        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateAmountLabel), userInfo: nil, repeats: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,7 +81,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return collectionView.tag == 0 ? newsTitleData.count : 1
+        return collectionView.tag == 0 ? newsTitleData.count : locationData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -88,16 +90,21 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             newsCell.newsTitleLabel.text = newsTitleData[indexPath.item]
             newsCell.newsImageView.image = UIImage(named: "news-image\(indexPath.item)")
             return newsCell
+        } else {
+            let locationCell = locationCollectionView.dequeueReusableCell(withReuseIdentifier: LocationCardCell.cellDescription, for: indexPath) as! LocationCardCell
+            locationCell.locationLabel.text = locationData[indexPath.item]
+            locationCell.locationImageView.image = UIImage(named: "location\(indexPath.item)")
+            return locationCell
         }
-        return UICollectionViewCell()
     }
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if (collectionView.tag == 0){
-            return CGSize(width: 324, height: 187)
+            return CGSize(width: 335, height: 187)
+        } else {
+            return CGSize(width: 160, height: 50)
         }
-        return CGSize(width: 0, height: 0)
     }
 }
