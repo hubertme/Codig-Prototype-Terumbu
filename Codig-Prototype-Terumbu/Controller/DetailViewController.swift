@@ -14,7 +14,7 @@ class DetailViewController: UIViewController {
         return .lightContent
     }
     
-    var selectedAction = Campaign()
+    var selectedCampaign = Campaign()
     
     // MARK: - Outlets
     @IBOutlet weak var pageTableView: UITableView!
@@ -44,20 +44,21 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = pageTableView.dequeueReusableCell(withIdentifier: DetailCell.cellDescription, for: indexPath) as! DetailCell
         cell.selectionStyle = .none
         
-        cell.descriptionLabel.text = selectedAction.description
-        cell.locationLabel.text = selectedAction.location
-        cell.coralImageView.image = selectedAction.image
+        cell.descriptionLabel.text = selectedCampaign.description
+        cell.locationLabel.text = selectedCampaign.location
+        cell.coralImageView.image = selectedCampaign.image
+        cell.picLabel.text = selectedCampaign.campaignPIC
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEE, dd MMM yyyy"
-        cell.dateLabel.text = dateFormatter.string(from: selectedAction.date)
+        cell.dateLabel.text = dateFormatter.string(from: selectedCampaign.date)
         
         let currencyFormatter = NumberFormatter()
         currencyFormatter.numberStyle = .currency
         currencyFormatter.locale = Locale(identifier: "id-ID")
         currencyFormatter.maximumFractionDigits = 2
         currencyFormatter.minimumFractionDigits = 2
-        cell.donationAmountLabel.text = currencyFormatter.string(from: NSNumber(value: selectedAction.donationAmount))
+        cell.donationAmountLabel.text = currencyFormatter.string(from: NSNumber(value: selectedCampaign.donationAmount))
         
         return cell
     }

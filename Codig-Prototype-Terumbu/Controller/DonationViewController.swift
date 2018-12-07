@@ -49,6 +49,7 @@ class DonationViewController: UIViewController {
         donation1.date = Date()
         donation1.location = "Jakarta, ID"
         donation1.donationAmount = 150000000.20
+        donation1.campaignPIC = "The World Coral Organization"
         
         let donation2 = Campaign()
         donation2.title = "Second item"
@@ -56,6 +57,7 @@ class DonationViewController: UIViewController {
         donation2.date = Date()
         donation2.location = "Tangerang, ID"
         donation2.donationAmount = 3178500000
+        donation2.campaignPIC = "Komunitas Terumbu Karang Tangerang"
         
         let donation3 = Campaign()
         donation3.title = "Third item"
@@ -63,6 +65,7 @@ class DonationViewController: UIViewController {
         donation3.date = Date()
         donation3.location = "Kepulauan Seribu, ID"
         donation3.donationAmount = 2250499735.35
+        donation3.campaignPIC = "Badan Eksekutif Software Engineering Prasmul (BESER)"
         
         let donation4 = Campaign()
         donation4.title = "Fourth item"
@@ -70,6 +73,7 @@ class DonationViewController: UIViewController {
         donation4.date = Date()
         donation4.location = "Pontianak, ID"
         donation4.donationAmount = 12575000
+        donation4.campaignPIC = "Ahmad Bukhori"
         
         donations.append(donation1)
         donations.append(donation2)
@@ -113,7 +117,7 @@ extension DonationViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextVC = DetailViewController()
-        nextVC.selectedAction = donations[indexPath.row]
+        nextVC.selectedCampaign = donations[indexPath.row]
         nextVC.title = donations[indexPath.row].title
         navigationController?.pushViewController(nextVC, animated: true)
         
