@@ -10,4 +10,4 @@ import Foundation
 import UIKit
 import ChameleonFramework
 
-let barTintColour = UIColor.flatSkyBlueColorDark()
+let primaryColour = UIColor.flatSkyBlueColorDark()

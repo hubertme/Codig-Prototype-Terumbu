@@ -28,7 +28,7 @@ class HomeViewController: UIViewController {
     private func setupNavigationBar(){
         navigationController?.navigationBar.topItem?.title = "Terumbu"
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.barTintColor = barTintColour
+        navigationController?.navigationBar.barTintColor = primaryColour
         navigationController?.navigationBar.tintColor = .white
         
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
     
     private func setupTabBar(){
         tabBarController?.tabBar.tintColor = .white
-        tabBarController?.tabBar.barTintColor = barTintColour
+        tabBarController?.tabBar.barTintColor = primaryColour
         tabBarController?.tabBar.unselectedItemTintColor = .lightGray
     }
     
