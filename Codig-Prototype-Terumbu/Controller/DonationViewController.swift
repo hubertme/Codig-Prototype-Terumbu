@@ -33,7 +33,7 @@ class DonationViewController: UIViewController {
 
     // MARK: - Private methods
     private func setupNavigationBar(){
-        navigationController?.navigationBar.topItem?.title = "Donasiku"
+        navigationController?.navigationBar.topItem?.title = "My Donation"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     

@@ -63,7 +63,7 @@ class HomeViewController: UIViewController {
     }
     
     private func setupNavigationBar(){
-        navigationController?.navigationBar.topItem?.title = "Terumbu"
+        navigationController?.navigationBar.topItem?.title = "Regrowing Coral"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.barTintColor = primaryColour
         navigationController?.navigationBar.tintColor = .white
