@@ -25,6 +25,7 @@
 		E4EF427221B8236E00662CD3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF427121B8236E00662CD3 /* Extension.swift */; };
 		FC0BDAD221BA44DD002054C6 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDAD121BA44DD002054C6 /* Report.swift */; };
 		FC0BDAD421BA46C7002054C6 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDAD321BA46C6002054C6 /* Campaign.swift */; };
+		FC0BDAD721BA4D2B002054C6 /* GlobalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0BDAD621BA4D2B002054C6 /* GlobalStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E4EF427121B8236E00662CD3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FC0BDAD121BA44DD002054C6 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		FC0BDAD321BA46C6002054C6 /* Campaign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
+		FC0BDAD621BA4D2B002054C6 /* GlobalStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		E4EF423D21B7ACEE00662CD3 /* Codig-Prototype-Terumbu */ = {
 			isa = PBXGroup;
 			children = (
+				FC0BDAD521BA4D16002054C6 /* Resources */,
 				E4EF425221B7ADD600662CD3 /* Model */,
 				E4EF425121B7ADD400662CD3 /* View */,
 				E4EF425021B7ADD100662CD3 /* Controller */,
@@ -162,6 +165,14 @@
 				E4EF426D21B7CCEA00662CD3 /* DetailCell.swift */,
 			);
 			path = CellController;
+			sourceTree = "<group>";
+		};
+		FC0BDAD521BA4D16002054C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC0BDAD621BA4D2B002054C6 /* GlobalStyle.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				E4EF425921B7B07900662CD3 /* HomeViewController.swift in Sources */,
 				E4EF426321B7B45E00662CD3 /* DonationTableViewCell.swift in Sources */,
 				E4EF426921B7C5B900662CD3 /* DetailViewController.swift in Sources */,
+				FC0BDAD721BA4D2B002054C6 /* GlobalStyle.swift in Sources */,
 				FC0BDAD421BA46C7002054C6 /* Campaign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
