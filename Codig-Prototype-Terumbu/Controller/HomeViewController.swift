@@ -14,9 +14,19 @@ class HomeViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
-
+    
+    // MARK: - Outlets
+    @IBOutlet var headingLabels: [UILabel]!
+    
+    @IBOutlet weak var newsCollectionView: UICollectionView!
+    @IBOutlet weak var locationCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for headingLabel in headingLabels{
+            headingLabel.textColor = primaryColour
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
