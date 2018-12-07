@@ -11,6 +11,9 @@ import ChameleonFramework
 
 class HomeViewController: UIViewController {
     
+    // MARK: - Dummy data
+    let newsTitleData: Array<String> = ["Save our corals!", "Two coral reefs known missing in a beach", "Coral plantation is the future of saving corals", "Crowdfunding as the solution for saving environment"]
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
@@ -62,12 +65,13 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return collectionView.tag == 0 ? 7 : 1
+        return collectionView.tag == 0 ? newsTitleData.count : 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (collectionView.tag == 0){
-            let newsCell = newsCollectionView.dequeueReusableCell(withReuseIdentifier: NewsCardCell.cellDescription, for: indexPath)
+            let newsCell = newsCollectionView.dequeueReusableCell(withReuseIdentifier: NewsCardCell.cellDescription, for: indexPath) as! NewsCardCell
+            newsCell.newsTitleLabel.text = newsTitleData[indexPath.item]
             return newsCell
         }
         return UICollectionViewCell()
@@ -77,7 +81,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 extension HomeViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if (collectionView.tag == 0){
-            return CGSize(width: 340, height: 187)
+            return CGSize(width: 324, height: 187)
         }
         return CGSize(width: 0, height: 0)
     }
