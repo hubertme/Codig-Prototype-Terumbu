@@ -22,15 +22,10 @@ class TabBarController: UITabBarController {
     private func addViewControllers(){
         let homeVC = HomeViewController()
         let donationVC = DonationViewController()
-//        let profileVC = ProfileViewController()
         
-//        homeVC.tabBarItem = UITabBarItem(title: "Home", image: <#T##UIImage?#>, tag: <#T##Int#>)
-//        donationVC.tabBarItem = UITabBarItem(title: "Donation", image: <#T##UIImage?#>, tag: <#T##Int#>)
-        
-        homeVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
-        donationVC.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 1)
+        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "icon-home")!, tag: 0)
+        donationVC.tabBarItem = UITabBarItem(title: "My Donation", image: UIImage(named: "icon-donation")!, tag: 1)
         
         viewControllers = [homeVC, donationVC]
     }
-
 }
