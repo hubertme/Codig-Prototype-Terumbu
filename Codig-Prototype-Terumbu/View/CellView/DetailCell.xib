@@ -163,7 +163,6 @@
                     <constraint firstItem="0mP-8W-9Gy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WSX-yp-WUh"/>
                     <constraint firstItem="B0s-pM-1EK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="WWD-ks-wHd"/>
                     <constraint firstItem="B0s-pM-1EK" firstAttribute="top" secondItem="WTe-tf-UXc" secondAttribute="bottom" constant="16" id="Xyd-qy-qXb"/>
-                    <constraint firstItem="F5A-8Y-L19" firstAttribute="centerY" secondItem="9cf-50-C1M" secondAttribute="centerY" id="YmY-I0-64i"/>
                     <constraint firstItem="aI4-kv-VjW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Zr4-kW-yvt"/>
                     <constraint firstItem="9cf-50-C1M" firstAttribute="width" secondItem="9cf-50-C1M" secondAttribute="height" multiplier="1:1" id="aln-GP-iIQ"/>
                     <constraint firstItem="Wak-3f-ARI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="bFv-rj-6fu"/>
@@ -176,6 +175,7 @@
                     <constraint firstAttribute="trailing" secondItem="0mP-8W-9Gy" secondAttribute="trailing" id="mGq-XG-MVh"/>
                     <constraint firstItem="B0s-pM-1EK" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ovG-iT-ssE"/>
                     <constraint firstItem="UAa-8z-nP0" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="r88-WW-aA2"/>
+                    <constraint firstItem="F5A-8Y-L19" firstAttribute="top" secondItem="GSd-0I-s7u" secondAttribute="bottom" constant="13" id="red-Kd-NNe"/>
                     <constraint firstItem="li5-Qo-dcx" firstAttribute="top" secondItem="G9f-qj-M0j" secondAttribute="bottom" constant="8" id="t1e-V3-43L"/>
                 </constraints>
             </tableViewCellContentView>
