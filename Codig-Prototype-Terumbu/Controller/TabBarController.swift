@@ -21,11 +21,11 @@ class TabBarController: UITabBarController {
     
     private func addViewControllers(){
         let homeVC = HomeViewController()
-        let donationVC = DonationViewController()
+        let personalVC = PersonalViewController()
         
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "icon-home")!, tag: 0)
-        donationVC.tabBarItem = UITabBarItem(title: "My Donation", image: UIImage(named: "icon-donation")!, tag: 1)
+        personalVC.tabBarItem = UITabBarItem(title: "My Donation", image: UIImage(named: "icon-donation")!, tag: 1)
         
-        viewControllers = [homeVC, donationVC]
+        viewControllers = [homeVC, personalVC]
     }
 }

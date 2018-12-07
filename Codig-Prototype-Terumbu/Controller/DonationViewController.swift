@@ -28,14 +28,14 @@ class DonationViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        setupNavigationBar()
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     // MARK: - Private methods
-    private func setupNavigationBar(){
-        navigationController?.navigationBar.topItem?.title = "My Donation"
-        navigationController?.navigationBar.prefersLargeTitles = true
-    }
     
     // Add donations for testing purposes only
     private func addDummyDonations(){
