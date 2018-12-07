@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="340" height="187"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coral-test" translatesAutoresizingMaskIntoConstraints="NO" id="1VP-aJ-aF6">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coral-news" translatesAutoresizingMaskIntoConstraints="NO" id="1VP-aJ-aF6">
                         <rect key="frame" x="0.0" y="0.0" width="340" height="187"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
@@ -28,14 +28,29 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Title Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aE-ul-BbB">
+                        <rect key="frame" x="16" y="142" width="308" height="29"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="9aE-ul-BbB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="0dU-hT-bS1"/>
+                <constraint firstAttribute="trailing" secondItem="9aE-ul-BbB" secondAttribute="trailing" constant="16" id="hHm-0s-pvF"/>
+                <constraint firstAttribute="bottom" secondItem="9aE-ul-BbB" secondAttribute="bottom" constant="16" id="xRA-cA-LG1"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="342" height="184"/>
+            <connections>
+                <outlet property="newsImageView" destination="1VP-aJ-aF6" id="egN-k9-W3c"/>
+                <outlet property="newsTitleLabel" destination="9aE-ul-BbB" id="NzG-EK-Xy2"/>
+            </connections>
             <point key="canvasLocation" x="297.60000000000002" y="213.64317841079463"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="coral-test" width="5472" height="3080"/>
+        <image name="coral-news" width="4608" height="3456"/>
     </resources>
 </document>

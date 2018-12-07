@@ -16,7 +16,11 @@ class NewsCardCell: UICollectionViewCell {
     static var nib: UINib{
         return UINib(nibName: cellDescription, bundle: nil)
     }
-
+    
+    // MARK: - Outlets
+    @IBOutlet weak var newsImageView: UIImageView!
+    @IBOutlet weak var newsTitleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
