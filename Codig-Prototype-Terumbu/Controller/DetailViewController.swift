@@ -14,7 +14,7 @@ class DetailViewController: UIViewController {
         return .lightContent
     }
     
-    var selectedAction = CoralAction()
+    var selectedAction = Campaign()
     
     // MARK: - Outlets
     @IBOutlet weak var pageTableView: UITableView!

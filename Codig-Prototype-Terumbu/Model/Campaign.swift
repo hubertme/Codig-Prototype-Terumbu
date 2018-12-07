@@ -9,11 +9,14 @@
 import Foundation
 import UIKit
 
-class CoralAction{
+class Campaign{
     var title: String = ""
     var description: String = ""
     var location: String = ""
     var date: Date = Date()
     var image: UIImage = UIImage(named: "coral-test") ?? UIImage()
     var donationAmount: Double = 0
+    
+    var reports: Array<Report> = []
+    var campaignPIC: String = ""
 }
