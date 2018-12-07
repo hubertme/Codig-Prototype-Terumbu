@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     
     // MARK: - Dummy data
     let newsTitleData: Array<String> = ["Save our corals!", "Two coral reefs known broken in a beach", "Coral plantation is the future of saving corals", "Crowdfunding as the solution for saving environment", "New method of coral farming is under research"]
-    var amountOfPeople = 13427586
+    var amountOfPeople = 99726
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
