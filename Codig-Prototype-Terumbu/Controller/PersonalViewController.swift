@@ -10,6 +10,10 @@ import UIKit
 
 class PersonalViewController: UIViewController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
     // MARK: - Outlets
     @IBOutlet weak var campaignCollectionView: UICollectionView!
     
