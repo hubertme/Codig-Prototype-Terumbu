@@ -48,6 +48,11 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource{
         cell.locationLabel.text = selectedCampaign.location
         cell.coralImageView.image = selectedCampaign.image
         cell.picLabel.text = selectedCampaign.campaignPIC
+        if let lastReport = selectedCampaign.reports.last {
+            cell.latestReportLabel.text = lastReport.description
+        } else {
+            cell.latestReportLabel.text = "No report is found"
+        }
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEE, dd MMM yyyy"
