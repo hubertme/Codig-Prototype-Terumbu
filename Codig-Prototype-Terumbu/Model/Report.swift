@@ -10,8 +10,11 @@ import Foundation
 import UIKit
 
 class Report {
-    var title: String = ""
     var description: String = ""
     var image = UIImage()
     var date: Date = Date()
+    
+    init (description: String){
+        self.description = description
+    }
 }
