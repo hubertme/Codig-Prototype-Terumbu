@@ -44,7 +44,7 @@
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-48-qCV">
                         <rect key="frame" x="41" y="753.5" width="293" height="55"/>
-                        <color key="backgroundColor" red="0.10196078431372549" green="0.45098039215686275" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.2784313725" green="0.57254901960000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="55" id="iSH-Zq-qMd"/>
                         </constraints>
