@@ -13,8 +13,6 @@ class DonationViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
-    
-    var campaigns: Array<Campaign> = []
 
     // MARK: - Outlets
     @IBOutlet weak var campaignCollectionView: UICollectionView!
@@ -47,9 +45,7 @@ class DonationViewController: UIViewController {
         donation1.donationAmount = 3178500000
         donation1.campaignPIC = "The Indonesia Coral Organization"
         donation1.image = UIImage(named: "coral0") ?? UIImage()
-        
-        let report = Report()
-        donation1.reports.append(<#T##newElement: Report##Report#>)
+        donation1.reports.append(Report(description: "A total of Rp250,000,000 has been used for the preservation of coral reefs in the waters of Raja Ampat, Indonesia. Donations have been given to local fishing associations who are the target of the campaign in Raja Ampat. This donation is used for the purchase of transplantation supporting tools such as cement, iron frames, and equipment for cutting coral reef seedlings."))
         
         let donation2 = Campaign()
         donation2.title = "No coral, no hope!"
@@ -77,6 +73,7 @@ class DonationViewController: UIViewController {
         donation4.donationAmount = 22504997359.35
         donation4.campaignPIC = "The RICH Foundation"
         donation4.image = UIImage(named: "coral3") ?? UIImage()
+        donation4.reports.append(Report(description: "A total of Rp4,500,000,000 has been donated to fishing associations. A total of 120 coral seedlings have been planted in this area. Thanks to the donations given, all the equipment needed for planting coral reefs can be fulfilled."))
         
         let donation5 = Campaign()
         donation5.title = "Manokwari sounds of sea"
@@ -86,23 +83,23 @@ class DonationViewController: UIViewController {
         donation5.campaignPIC = "The RICH Foundation"
         donation5.image = UIImage(named: "coral4") ?? UIImage()
         
-        campaigns.append(donation1)
-        campaigns.append(donation2)
-        campaigns.append(donation3)
-        campaigns.append(donation4)
-        campaigns.append(donation5)
+        dummyCampaigns.append(donation1)
+        dummyCampaigns.append(donation2)
+        dummyCampaigns.append(donation3)
+        dummyCampaigns.append(donation4)
+        dummyCampaigns.append(donation5)
     }
 }
 
 // MARK: -
 extension DonationViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return campaigns.count
+        return dummyCampaigns.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cardCell = campaignCollectionView.dequeueReusableCell(withReuseIdentifier: CampaignCardCell.cellDescription, for: indexPath) as! CampaignCardCell
-        let currentCampaign = campaigns[indexPath.row]
+        let currentCampaign = dummyCampaigns[indexPath.row]
         
         cardCell.titleLabel.text = currentCampaign.title
         cardCell.organisationLabel.text = currentCampaign.campaignPIC
@@ -124,7 +121,7 @@ extension DonationViewController: UICollectionViewDelegateFlowLayout, UICollecti
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailVC = DetailViewController()
-        detailVC.selectedCampaign = campaigns[indexPath.item]
+        detailVC.selectedCampaign = dummyCampaigns[indexPath.item]
         detailVC.title = "Campaign detail"
         navigationController?.pushViewController(detailVC, animated: true)
     }
