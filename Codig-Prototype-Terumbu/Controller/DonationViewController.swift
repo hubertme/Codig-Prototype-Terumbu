@@ -14,17 +14,14 @@ class DonationViewController: UIViewController {
         return .lightContent
     }
     
-    var donations: Array<Campaign> = []
+    var campaigns: Array<Campaign> = []
 
     // MARK: - Outlets
-    @IBOutlet weak var donationTableView: UITableView!
+    @IBOutlet weak var campaignCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addDummyDonations()
-        
-        donationTableView.register(DonationTableViewCell.nib, forCellReuseIdentifier: DonationTableViewCell.cellDescription)
-        donationTableView.tableFooterView = UIView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,7 +34,7 @@ class DonationViewController: UIViewController {
 
     // MARK: - Private methods
     
-    // Add donations for testing purposes only
+    // Add campaigns for testing purposes only
     private func addDummyDonations(){
         let donation1 = Campaign()
         donation1.title = "First item"
@@ -75,54 +72,25 @@ class DonationViewController: UIViewController {
         donation4.donationAmount = 12575000
         donation4.campaignPIC = "Ahmad Bukhori"
         
-        donations.append(donation1)
-        donations.append(donation2)
-        donations.append(donation3)
-        donations.append(donation4)
+        campaigns.append(donation1)
+        campaigns.append(donation2)
+        campaigns.append(donation3)
+        campaigns.append(donation4)
     }
 }
 
 // MARK: -
-extension DonationViewController: UITableViewDelegate, UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return donations.count
+extension DonationViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return campaigns.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = donationTableView.dequeueReusableCell(withIdentifier: DonationTableViewCell.cellDescription, for: indexPath) as! DonationTableViewCell
-        let donation = donations[indexPath.row]
-        
-        cell.titleLabel.text = donation.title
-        cell.descriptionLabel.text = donation.description
-        cell.locationLabel.text = donation.location
-        cell.coralImageView.image = donation.image
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEE, dd MMM yyyy"
-        cell.dateLabel.text = dateFormatter.string(from: donation.date)
-        
-        let currencyFormatter = NumberFormatter()
-        currencyFormatter.numberStyle = .currency
-        currencyFormatter.locale = Locale(identifier: "id-ID")
-        currencyFormatter.maximumFractionDigits = 2
-        currencyFormatter.minimumFractionDigits = 2
-        cell.donationAmountLabel.text = currencyFormatter.string(from: NSNumber(value: donation.donationAmount))
-        
-        return cell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        <#code#>
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let nextVC = DetailViewController()
-        nextVC.selectedCampaign = donations[indexPath.row]
-        nextVC.title = donations[indexPath.row].title
-        navigationController?.pushViewController(nextVC, animated: true)
-        
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-    
 }
 
