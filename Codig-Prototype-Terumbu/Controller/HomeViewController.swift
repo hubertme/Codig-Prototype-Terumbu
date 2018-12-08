@@ -102,6 +102,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if (collectionView.tag == 0){
             if (indexPath.item == 0){
                 let newsVC = NewsViewController()
+                newsVC.title = "News"
                 navigationController?.pushViewController(newsVC, animated: true)
             }
         }

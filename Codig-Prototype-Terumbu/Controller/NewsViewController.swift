@@ -19,6 +19,7 @@ class NewsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.topItem?.title = "Back"
         newsTableView.register(NewsCell.nib, forCellReuseIdentifier: NewsCell.cellDescription)
         
         newsTableView.tableFooterView = UIView()
