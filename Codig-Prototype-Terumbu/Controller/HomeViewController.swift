@@ -43,9 +43,6 @@ class HomeViewController: UIViewController {
         
         newsCollectionView.register(NewsCardCell.nib, forCellWithReuseIdentifier: NewsCardCell.cellDescription)
         locationCollectionView.register(LocationCardCell.nib, forCellWithReuseIdentifier: LocationCardCell.cellDescription)
-        
-        // Animating label
-//        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateAmountLabel), userInfo: nil, repeats: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
