@@ -20,14 +20,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;One does not simply&quot; label quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCh-zQ-F9q">
-                        <rect key="frame" x="32" y="398" width="311" height="57.5"/>
+                        <rect key="frame" x="32" y="399" width="311" height="57.5"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="News Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qy5-Oc-Pak">
-                        <rect key="frame" x="16" y="328.5" width="343" height="19"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <rect key="frame" x="16" y="328.5" width="343" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -38,7 +38,7 @@
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="K5L-oy-aeO">
-                        <rect key="frame" x="16" y="371.5" width="343" height="2"/>
+                        <rect key="frame" x="16" y="372.5" width="343" height="2"/>
                         <color key="backgroundColor" red="0.2784313725" green="0.57254901960000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="2" id="bGN-dH-itv"/>
@@ -52,10 +52,10 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="rCh-zQ-F9q" secondAttribute="bottom" constant="24.5" id="2bL-7p-vwY"/>
                     <constraint firstItem="K5L-oy-aeO" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="4Ld-Vv-Kpj"/>
                     <constraint firstItem="rxC-BB-1kp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4cg-fQ-a5j"/>
                     <constraint firstItem="K5L-oy-aeO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="CdN-by-pBF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rCh-zQ-F9q" secondAttribute="bottom" constant="23.5" id="Dev-QW-urF"/>
                     <constraint firstItem="qy5-Oc-Pak" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="FK2-n3-Eeo"/>
                     <constraint firstItem="rCh-zQ-F9q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="FUG-tA-hmC"/>
                     <constraint firstAttribute="trailing" secondItem="rxC-BB-1kp" secondAttribute="trailing" id="GJJ-gd-eYS"/>
