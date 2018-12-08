@@ -26,7 +26,6 @@ class DonationViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.prefersLargeTitles = false
-        navigationController?.navigationBar.topItem?.title = "Back"
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -37,6 +36,8 @@ class DonationViewController: UIViewController {
     
     // Add campaigns for testing purposes only
     private func addDummyDonations(){
+        dummyCampaigns = []
+        
         let donation1 = Campaign()
         donation1.title = "Save corals, save Indonesia"
         donation1.description = "Coral reefs in Jayapura are currently increasingly threatened due to human activities, including ship transportation activities and irresponsible fishing activities. 55% of the damage to coral reefs has occurred in this region. Damage to coral reefs will certainly disrupt the survival of marine ecosystem and reduce the variety of the sea."
