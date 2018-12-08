@@ -137,6 +137,9 @@
                         <state key="normal" title="I want to participate!">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <connections>
+                            <action selector="handleAddDonation:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ERZ-5I-DxD"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

@@ -10,7 +10,7 @@ import UIKit
 
 class MakeDonationViewController: UIViewController {
     
-    var indexOfCampaign = 0
+//    var indexOfCampaign = 0
     
     // MARK: - Outlets
     @IBOutlet var headingLabels: [UILabel]!
@@ -35,7 +35,36 @@ class MakeDonationViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func handleAddDonation(_ sender: Any) {
+        let donatedAmount = Double(amountTextField.text!)!
         
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.locale = Locale(identifier: "id-ID")
+        currencyFormatter.maximumFractionDigits = 2
+        currencyFormatter.minimumFractionDigits = 2
+        
+        let formattedAmountString = currencyFormatter.string(from: NSNumber(value: donatedAmount))!
+        
+        let alertController = UIAlertController(title: "Donation confirmation", message: "Are you sure you want to donate with an amount of \(formattedAmountString)?", preferredStyle: .alert)
+        let okayAction = UIAlertAction(title: "Yes", style: .default) { (_) in
+            let insideAlert = UIAlertController(title: "Donation received", message: "Please wait for 1-2 working days for our staff checking your donation. Thank you for donating!", preferredStyle: .alert)
+            let okayAction = UIAlertAction(title: "You're welcome", style: .default, handler: { (_) in
+                self.handleDismissButton(self)
+            })
+            insideAlert.addAction(okayAction)
+            self.present(insideAlert, animated: true, completion: nil)
+        }
+        let noAction = UIAlertAction(title: "No", style: .cancel) { (_) in
+            self.amountTextField.text = ""
+        }
+        
+        alertController.addAction(okayAction)
+        alertController.addAction(noAction)
+        
+        self.present(alertController, animated: true, completion: nil)
     }
     
+    @IBAction func handleDismissButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

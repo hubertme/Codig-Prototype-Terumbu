@@ -25,26 +25,26 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your participation!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXk-Cb-umY">
-                    <rect key="frame" x="16" y="52" width="343" height="60"/>
+                    <rect key="frame" x="16" y="88" width="343" height="60"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the amount of your donation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeL-Cd-bDb">
-                    <rect key="frame" x="16" y="152" width="343" height="48"/>
+                    <rect key="frame" x="16" y="188" width="343" height="48"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYx-1d-Znk">
-                    <rect key="frame" x="16" y="294" width="343" height="93.5"/>
+                    <rect key="frame" x="16" y="330" width="343" height="93.5"/>
                     <string key="text">"Although we are not there, we are still there to support them, take care of them, and let them grow.                                 We promise, we will"</string>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWD-Aq-HgG">
-                    <rect key="frame" x="32" y="224" width="311" height="30"/>
+                    <rect key="frame" x="32" y="260" width="311" height="30"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwG-bQ-Eek">
                             <rect key="frame" x="0.0" y="0.0" width="22" height="30"/>
@@ -61,13 +61,13 @@
                     </subviews>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-RICH Foundation" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qub-Ff-XSx">
-                    <rect key="frame" x="233" y="395.5" width="126" height="20.5"/>
+                    <rect key="frame" x="233" y="431.5" width="126" height="20.5"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTB-xc-HnH">
-                    <rect key="frame" x="41" y="452" width="293" height="55"/>
+                    <rect key="frame" x="41" y="488" width="293" height="55"/>
                     <color key="backgroundColor" red="0.2784313725" green="0.57254901960000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="55" id="ppi-iw-F1I"/>
@@ -80,9 +80,25 @@
                         <action selector="handleAddDonation:" destination="-1" eventType="touchUpInside" id="x3s-tF-Ecf"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uy8-eO-yHM">
+                    <rect key="frame" x="315" y="36" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="bjR-wi-fFd"/>
+                        <constraint firstAttribute="width" secondItem="Uy8-eO-yHM" secondAttribute="height" multiplier="1:1" id="cbo-J3-34k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="X">
+                        <color key="titleColor" red="0.2784313725" green="0.57254901960000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="handleDismissButton:" destination="-1" eventType="touchUpInside" id="ku9-no-Rju"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="wXk-Cb-umY" firstAttribute="top" secondItem="Uy8-eO-yHM" secondAttribute="bottom" constant="16" id="6FT-rI-bvx"/>
+                <constraint firstItem="Uy8-eO-yHM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="BFU-uY-tyA"/>
                 <constraint firstItem="nTB-xc-HnH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="41" id="IQU-yg-Yqf"/>
                 <constraint firstItem="zYx-1d-Znk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="IZC-hL-wue"/>
                 <constraint firstAttribute="trailing" secondItem="Qub-Ff-XSx" secondAttribute="trailing" constant="16" id="L3H-EM-swl"/>
@@ -90,8 +106,8 @@
                 <constraint firstItem="HeL-Cd-bDb" firstAttribute="top" secondItem="wXk-Cb-umY" secondAttribute="bottom" constant="40" id="NDs-d1-JOJ"/>
                 <constraint firstItem="wXk-Cb-umY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="PVO-7D-56d"/>
                 <constraint firstAttribute="trailing" secondItem="HeL-Cd-bDb" secondAttribute="trailing" constant="16" id="WpZ-f4-p3R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Uy8-eO-yHM" secondAttribute="trailing" constant="24" id="WtT-h6-ynR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eWD-Aq-HgG" secondAttribute="trailing" constant="32" id="bDc-ub-0T6"/>
-                <constraint firstItem="wXk-Cb-umY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="bJw-cv-NYS"/>
                 <constraint firstItem="Qub-Ff-XSx" firstAttribute="top" secondItem="zYx-1d-Znk" secondAttribute="bottom" constant="8" id="dYH-Tt-Kgt"/>
                 <constraint firstItem="nTB-xc-HnH" firstAttribute="top" secondItem="Qub-Ff-XSx" secondAttribute="bottom" constant="36" id="gC9-jn-cq8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wXk-Cb-umY" secondAttribute="trailing" constant="16" id="mDs-Fq-VFW"/>

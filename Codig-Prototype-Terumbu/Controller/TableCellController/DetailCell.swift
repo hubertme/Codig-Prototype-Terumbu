@@ -46,4 +46,10 @@ class DetailCell: UITableViewCell {
             titleLabel.textColor = primaryColour
         }
     }
+    
+    // MARK: Actions
+    @IBAction func handleAddDonation(_ sender: Any) {
+        let nextVC = MakeDonationViewController()
+        UIApplication.shared.keyWindow?.rootViewController?.present(nextVC, animated: true, completion: nil)
+    }
 }
