@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MakeDonationViewController" customModule="Codig_Prototype_Terumbu" customModuleProvider="target">
+            <connections>
+                <outlet property="amountTextField" destination="27E-JI-fsG" id="puo-sh-lbi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="headingLabels" destination="wXk-Cb-umY" collectionClass="NSMutableArray" id="N01-lP-5c7"/>
+                <outletCollection property="headingLabels" destination="HeL-Cd-bDb" collectionClass="NSMutableArray" id="3p5-nn-glw"/>
+                <outletCollection property="headingLabels" destination="zYx-1d-Znk" collectionClass="NSMutableArray" id="YIk-IW-FRa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for your participation!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXk-Cb-umY">
+                    <rect key="frame" x="16" y="52" width="343" height="60"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the amount of your donation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeL-Cd-bDb">
+                    <rect key="frame" x="16" y="152" width="343" height="48"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYx-1d-Znk">
+                    <rect key="frame" x="16" y="294" width="343" height="93.5"/>
+                    <string key="text">"Although we are not there, we are still there to support them, take care of them, and let them grow.                                 We promise, we will"</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWD-Aq-HgG">
+                    <rect key="frame" x="32" y="224" width="311" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwG-bQ-Eek">
+                            <rect key="frame" x="0.0" y="0.0" width="22" height="30"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the amount here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="27E-JI-fsG">
+                            <rect key="frame" x="22" y="0.0" width="289" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-RICH Foundation" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qub-Ff-XSx">
+                    <rect key="frame" x="233" y="395.5" width="126" height="20.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTB-xc-HnH">
+                    <rect key="frame" x="41" y="452" width="293" height="55"/>
+                    <color key="backgroundColor" red="0.2784313725" green="0.57254901960000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="ppi-iw-F1I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                    <state key="normal" title="Make my donation">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="handleAddDonation:" destination="-1" eventType="touchUpInside" id="x3s-tF-Ecf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nTB-xc-HnH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="41" id="IQU-yg-Yqf"/>
+                <constraint firstItem="zYx-1d-Znk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="IZC-hL-wue"/>
+                <constraint firstAttribute="trailing" secondItem="Qub-Ff-XSx" secondAttribute="trailing" constant="16" id="L3H-EM-swl"/>
+                <constraint firstItem="HeL-Cd-bDb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="N27-8O-Cx8"/>
+                <constraint firstItem="HeL-Cd-bDb" firstAttribute="top" secondItem="wXk-Cb-umY" secondAttribute="bottom" constant="40" id="NDs-d1-JOJ"/>
+                <constraint firstItem="wXk-Cb-umY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="PVO-7D-56d"/>
+                <constraint firstAttribute="trailing" secondItem="HeL-Cd-bDb" secondAttribute="trailing" constant="16" id="WpZ-f4-p3R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eWD-Aq-HgG" secondAttribute="trailing" constant="32" id="bDc-ub-0T6"/>
+                <constraint firstItem="wXk-Cb-umY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="bJw-cv-NYS"/>
+                <constraint firstItem="Qub-Ff-XSx" firstAttribute="top" secondItem="zYx-1d-Znk" secondAttribute="bottom" constant="8" id="dYH-Tt-Kgt"/>
+                <constraint firstItem="nTB-xc-HnH" firstAttribute="top" secondItem="Qub-Ff-XSx" secondAttribute="bottom" constant="36" id="gC9-jn-cq8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wXk-Cb-umY" secondAttribute="trailing" constant="16" id="mDs-Fq-VFW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nTB-xc-HnH" secondAttribute="trailing" constant="41" id="pbX-eI-vZ2"/>
+                <constraint firstItem="eWD-Aq-HgG" firstAttribute="top" secondItem="HeL-Cd-bDb" secondAttribute="bottom" constant="24" id="pjI-mB-6n2"/>
+                <constraint firstItem="eWD-Aq-HgG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="rG0-D5-d9v"/>
+                <constraint firstItem="zYx-1d-Znk" firstAttribute="top" secondItem="eWD-Aq-HgG" secondAttribute="bottom" constant="40" id="tBh-Lu-5nu"/>
+                <constraint firstAttribute="trailing" secondItem="zYx-1d-Znk" secondAttribute="trailing" constant="16" id="tnw-Bl-NES"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>
