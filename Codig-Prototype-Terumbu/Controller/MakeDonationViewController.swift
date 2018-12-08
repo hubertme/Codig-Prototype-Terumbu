@@ -35,6 +35,15 @@ class MakeDonationViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func handleAddDonation(_ sender: Any) {
+        if amountTextField.text! == ""{
+            let alertController = UIAlertController(title: "Empty amount", message: "Please enter an amount", preferredStyle: .alert)
+            let okayAction = UIAlertAction(title: "Alright", style: .default, handler: nil)
+            alertController.addAction(okayAction)
+            self.present(alertController, animated: true, completion: nil)
+            
+            return
+        }
+        
         let donatedAmount = Double(amountTextField.text!)!
         
         let currencyFormatter = NumberFormatter()
