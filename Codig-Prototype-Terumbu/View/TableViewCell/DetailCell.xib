@@ -43,7 +43,7 @@
                         </subviews>
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mb5-48-qCV">
-                        <rect key="frame" x="41" y="757.5" width="293" height="55"/>
+                        <rect key="frame" x="41" y="753.5" width="293" height="55"/>
                         <color key="backgroundColor" red="0.10196078431372549" green="0.45098039215686275" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="55" id="iSH-Zq-qMd"/>
@@ -92,18 +92,19 @@
                         </constraints>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0s-pM-1EK">
-                        <rect key="frame" x="16" y="707.5" width="343" height="20"/>
+                        <rect key="frame" x="16" y="703.5" width="343" height="20"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest report label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9f-qj-M0j">
-                        <rect key="frame" x="16" y="589.5" width="343" height="24"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                        <rect key="frame" x="16" y="589.5" width="343" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTe-tf-UXc">
-                        <rect key="frame" x="16" y="667.5" width="343" height="24"/>
+                        <rect key="frame" x="16" y="663.5" width="343" height="24"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -121,7 +122,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li5-Qo-dcx">
-                        <rect key="frame" x="277" y="621.5" width="74" height="30"/>
+                        <rect key="frame" x="277" y="617.5" width="74" height="30"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                         <state key="normal" title="Read More"/>
                     </button>
@@ -141,7 +142,6 @@
                 <constraints>
                     <constraint firstItem="Wvi-gq-mY8" firstAttribute="top" secondItem="aI4-kv-VjW" secondAttribute="bottom" constant="16" id="5cA-UZ-Cr2"/>
                     <constraint firstItem="Wak-3f-ARI" firstAttribute="top" secondItem="0mP-8W-9Gy" secondAttribute="bottom" constant="24" id="644-2w-n61"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="mb5-48-qCV" secondAttribute="bottom" constant="45.5" id="7AC-Yo-1Ll"/>
                     <constraint firstItem="WTe-tf-UXc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="9dc-eM-ja7"/>
                     <constraint firstItem="G9f-qj-M0j" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Acg-jG-bi5"/>
                     <constraint firstAttribute="trailingMargin" secondItem="mb5-48-qCV" secondAttribute="trailing" constant="25" id="BBU-oE-uMa"/>
@@ -151,6 +151,7 @@
                     <constraint firstItem="F5A-8Y-L19" firstAttribute="leading" secondItem="9cf-50-C1M" secondAttribute="trailing" constant="16" id="E1M-Nm-IUr"/>
                     <constraint firstAttribute="trailingMargin" secondItem="B0s-pM-1EK" secondAttribute="trailing" id="Eb6-dU-lQ8"/>
                     <constraint firstItem="9cf-50-C1M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Hai-Ej-NNr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mb5-48-qCV" secondAttribute="bottom" constant="49.5" id="Hgq-UG-vAj"/>
                     <constraint firstAttribute="trailingMargin" secondItem="WTe-tf-UXc" secondAttribute="trailing" id="Kho-hD-Nvq"/>
                     <constraint firstItem="G9f-qj-M0j" firstAttribute="top" secondItem="UAa-8z-nP0" secondAttribute="bottom" constant="16" id="Kzv-GC-Pw7"/>
                     <constraint firstItem="mb5-48-qCV" firstAttribute="top" secondItem="B0s-pM-1EK" secondAttribute="bottom" constant="30" id="MIe-OJ-jQ6"/>
