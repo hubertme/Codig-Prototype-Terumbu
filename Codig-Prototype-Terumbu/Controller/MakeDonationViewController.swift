@@ -24,6 +24,7 @@ class MakeDonationViewController: UIViewController {
         super.viewDidLoad()
         
         changeHeadingsColour()
+        setupToolbar()
     }
     
     // MARK: - Private methods
@@ -31,6 +32,24 @@ class MakeDonationViewController: UIViewController {
         for heading in headingLabels{
             heading.textColor = primaryColour
         }
+    }
+    
+    private func setupToolbar(){
+        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        toolbar.barStyle = .default
+        toolbar.barTintColor = #colorLiteral(red: 0.869140625, green: 0.869140625, blue: 0.869140625, alpha: 1)
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: nil, action: #selector(dismissKeyboard))
+        
+        toolbar.items = [flexSpace, doneButton]
+        toolbar.sizeToFit()
+        
+        amountTextField.inputAccessoryView = toolbar
+    }
+    
+    @objc private func dismissKeyboard(){
+        amountTextField.resignFirstResponder()
     }
     
     // MARK: - Actions
