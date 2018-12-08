@@ -105,6 +105,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 newsVC.title = "News"
                 navigationController?.pushViewController(newsVC, animated: true)
             }
+        } else {
+            let campaignsVC = DonationViewController()
+            campaignsVC.title = locationData[indexPath.item]
+            navigationController?.pushViewController(campaignsVC, animated: true)
         }
     }
 }
