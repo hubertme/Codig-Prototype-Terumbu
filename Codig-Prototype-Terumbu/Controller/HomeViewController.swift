@@ -31,6 +31,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         addDummyCampaigns()
         
+        newsCollectionView.layoutMargins = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        
         for headingLabel in headingLabels{
             headingLabel.textColor = primaryColour
         }
@@ -175,8 +177,14 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if (collectionView.tag == 0){
             return CGSize(width: 335, height: 187)
-        } else {
-            return CGSize(width: 160, height: 50)
         }
+        return CGSize(width: 160, height: 50)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        if (collectionView.tag == 0){
+            return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        }
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }

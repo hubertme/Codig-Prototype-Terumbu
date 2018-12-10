@@ -25,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zvN-Zb-j30">
-                    <rect key="frame" x="20" y="73" width="335" height="187"/>
+                    <rect key="frame" x="0.0" y="73" width="375" height="187"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="187" id="mNG-Kt-oyF"/>
@@ -62,9 +62,9 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zvN-Zb-j30" secondAttribute="trailing" constant="20" id="2Wr-Vn-uBL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zvN-Zb-j30" secondAttribute="trailing" id="2Wr-Vn-uBL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="iQt-kL-hqG" secondAttribute="bottom" constant="8" id="4FK-Ti-d1b"/>
-                <constraint firstItem="zvN-Zb-j30" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="KOd-Qi-Ctf"/>
+                <constraint firstItem="zvN-Zb-j30" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KOd-Qi-Ctf"/>
                 <constraint firstItem="zvN-Zb-j30" firstAttribute="top" secondItem="78W-bs-DNt" secondAttribute="bottom" constant="8" id="Kyi-JH-HoC"/>
                 <constraint firstItem="iQt-kL-hqG" firstAttribute="top" secondItem="hV8-ln-7N2" secondAttribute="bottom" constant="8" id="W1E-eX-tsK"/>
                 <constraint firstItem="iQt-kL-hqG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Wdw-qT-KFP"/>
