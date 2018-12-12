@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Outlets
     @IBOutlet var headingLabels: [UILabel]!
@@ -21,6 +21,15 @@ class LoginViewController: UIViewController {
         
         loginButton.clipsToBounds = true
         loginButton.layer.cornerRadius = 10
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+    }
+    
+    // MARK: - TextField delegate methods
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     // MARK: - Actions
