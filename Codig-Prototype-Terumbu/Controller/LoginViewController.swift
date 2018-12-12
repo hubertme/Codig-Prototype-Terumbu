@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
@@ -34,10 +35,41 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Actions
     @IBAction func handleLoginButtonTapped(){
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
         
+        if (email == "") {
+            createAlertWithOkayAction(title: "Empty email", message: "Please fill in your email")
+        } else if (password == ""){
+            createAlertWithOkayAction(title: "Empty password", message: "Please fill in your password")
+        } else {
+            Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                if let error = error {
+                    print("Error:", error.localizedDescription)
+                    
+                    // Check connectivity issue
+                    let networkErrorPredicate = NSPredicate(format: "SELF CONTAINS[cd] %@", "network error")
+                    if (networkErrorPredicate.evaluate(with: error.localizedDescription)){
+                        self.createAlertWithOkayAction(title: "Connectivity issue", message: "Please connect to an active internet connection to proceed")
+                    } else {
+                        self.createAlertWithOkayAction(title: "Failed to sign in", message: "Error signing in with the entered credential")
+                    }
+                    return
+                }
+                print("Signed in with authentication:", result?.user.email)
+            }
+        }
     }
     
     @IBAction func handleDismissButtonTapped(){
         
+    }
+    
+    // MARK: - Private methods
+    private func createAlertWithOkayAction(title: String, message: String){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okayAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
+        alertController.addAction(okayAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 }
