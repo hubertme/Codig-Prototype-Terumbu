@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalViewController" customModule="Codig_Prototype_Terumbu" customModuleProvider="target">
             <connections>
                 <outlet property="campaignCollectionView" destination="65N-jf-7dH" id="h66-If-UPW"/>
+                <outlet property="navigationButton" destination="b4l-08-Y5b" id="b3L-xT-4IS"/>
                 <outlet property="needLoginView" destination="dbr-Na-iby" id="LzR-Sp-z6y"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -37,7 +38,7 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please login to continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGv-o9-3Pu">
                             <rect key="frame" x="32" y="177" width="311" height="72"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="30"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                             <color key="textColor" red="0.2784313725" green="0.57254901960000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>

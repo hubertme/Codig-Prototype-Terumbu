@@ -25,6 +25,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         emailTextField.delegate = self
         passwordTextField.delegate = self
+        
+        loginButton.clipsToBounds = true
+        loginButton.layer.cornerRadius = 10
     }
     
     // MARK: - TextField delegate methods

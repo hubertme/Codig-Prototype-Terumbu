@@ -18,6 +18,7 @@ class PersonalViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var campaignCollectionView: UICollectionView!
     @IBOutlet weak var needLoginView: UIView!
+    @IBOutlet weak var navigationButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,8 @@ class PersonalViewController: UIViewController {
         campaignCollectionView.delegate = self
         campaignCollectionView.dataSource = self
         
-        
+        navigationButton.clipsToBounds = true
+        navigationButton.layer.cornerRadius = 10
     }
     
     override func viewWillAppear(_ animated: Bool) {
