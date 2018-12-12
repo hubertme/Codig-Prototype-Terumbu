@@ -46,7 +46,7 @@
                     <rect key="frame" x="37" y="218" width="301" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your password here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4q-bS-yO2">
                     <rect key="frame" x="37" y="318" width="301" height="30"/>
