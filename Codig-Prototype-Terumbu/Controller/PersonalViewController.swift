@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class PersonalViewController: UIViewController {
     
@@ -25,6 +26,8 @@ class PersonalViewController: UIViewController {
         
         campaignCollectionView.delegate = self
         campaignCollectionView.dataSource = self
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,10 +40,42 @@ class PersonalViewController: UIViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem()
+    }
+    
     // MARK: - Private methods
     private func setupNavigationBar(){
         navigationController?.navigationBar.topItem?.title = "My Donation"
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(title: "Sign Out", style: .done, target: self, action: #selector(handleUserSignOut))
+        
+        if (currentUser == nil){
+            navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem()
+        }
+    }
+    
+    @objc private func handleUserSignOut(){
+        let alertController = UIAlertController(title: "Sign Out", message: "Are you sure you want to sign out?", preferredStyle: .alert)
+        let yesAction = UIAlertAction(title: "Yes", style: .default) { (_) in
+            do{
+                try Auth.auth().signOut()
+                currentUser = nil
+                
+                UIView.animate(withDuration: 1, animations: {
+                    self.needLoginView.alpha = 1
+                })
+                self.setupNavigationBar()
+            } catch {
+                print("Failed to sign out:", error.localizedDescription)
+            }
+        }
+        let noAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
+        alertController.addAction(yesAction)
+        alertController.addAction(noAction)
+        
+        self.present(alertController, animated: true, completion: nil)
     }
     
     // MARK: - Actions
