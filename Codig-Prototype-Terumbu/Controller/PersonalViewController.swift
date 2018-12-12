@@ -16,6 +16,7 @@ class PersonalViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var campaignCollectionView: UICollectionView!
+    @IBOutlet weak var needLoginView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,12 @@ class PersonalViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         setupNavigationBar()
+        
+        if (currentUser !=  nil){
+            needLoginView.alpha = 0
+        } else {
+            needLoginView.alpha = 1
+        }
     }
     
     // MARK: - Private methods
@@ -35,7 +42,12 @@ class PersonalViewController: UIViewController {
         navigationController?.navigationBar.topItem?.title = "My Donation"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
-
+    
+    // MARK: - Actions
+    @IBAction func navigateToLoginPage(){
+        let loginVC = LoginViewController()
+        self.present(loginVC, animated: true, completion: nil)
+    }
 }
 
 extension PersonalViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{

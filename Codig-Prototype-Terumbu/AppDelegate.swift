@@ -18,11 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Firebase configuration
         FirebaseApp.configure()
-        currentUser = Auth.auth().currentUser
         
         // Override point for customization after application launch.
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        let rootVC = LoginViewController()
+        let rootVC = TabBarController()
         let navController = UINavigationController(rootViewController: rootVC)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()

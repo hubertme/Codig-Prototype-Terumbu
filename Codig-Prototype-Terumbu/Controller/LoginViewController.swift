@@ -57,8 +57,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     return
                 }
                 currentUser = Auth.auth().currentUser
-                
-//                self.dismiss(animated: true, completion: nil)
+                self.dismiss(animated: true, completion: nil)
             }
         }
     }
