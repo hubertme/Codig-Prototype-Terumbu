@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5AE8687E74C3463D202D4C0F /* Pods_Codig_Prototype_Terumbu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC4820AFB1798F26C0FD571 /* Pods_Codig_Prototype_Terumbu.framework */; };
 		E433DD3A21C0B5A90002CC67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E433DD3921C0B5A90002CC67 /* GoogleService-Info.plist */; };
+		E433DD3C21C0B8200002CC67 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433DD3B21C0B8200002CC67 /* GlobalVariables.swift */; };
+		E433DD3F21C0B8B90002CC67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433DD3D21C0B8B90002CC67 /* LoginViewController.swift */; };
+		E433DD4021C0B8B90002CC67 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E433DD3E21C0B8B90002CC67 /* LoginViewController.xib */; };
 		E45C528821BAA92B00C682B9 /* NewsCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C528621BAA92B00C682B9 /* NewsCardCell.swift */; };
 		E45C528921BAA92B00C682B9 /* NewsCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C528721BAA92B00C682B9 /* NewsCardCell.xib */; };
 		E45C528C21BAC62D00C682B9 /* LocationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C528A21BAC62D00C682B9 /* LocationCardCell.swift */; };
@@ -47,6 +50,9 @@
 		3DE592934E2B50B98DC0348F /* Pods-Codig-Prototype-Terumbu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codig-Prototype-Terumbu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codig-Prototype-Terumbu/Pods-Codig-Prototype-Terumbu.debug.xcconfig"; sourceTree = "<group>"; };
 		5FC4820AFB1798F26C0FD571 /* Pods_Codig_Prototype_Terumbu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codig_Prototype_Terumbu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E433DD3921C0B5A90002CC67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E433DD3B21C0B8200002CC67 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		E433DD3D21C0B8B90002CC67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E433DD3E21C0B8B90002CC67 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		E45C528621BAA92B00C682B9 /* NewsCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardCell.swift; sourceTree = "<group>"; };
 		E45C528721BAA92B00C682B9 /* NewsCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCardCell.xib; sourceTree = "<group>"; };
 		E45C528A21BAC62D00C682B9 /* LocationCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCardCell.swift; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 				E45C528E21BAD40700C682B9 /* PersonalViewController.swift */,
 				E45C529221BAD5E000C682B9 /* NewsViewController.swift */,
 				E45C52A021BBE36900C682B9 /* MakeDonationViewController.swift */,
+				E433DD3D21C0B8B90002CC67 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 				E45C528F21BAD40700C682B9 /* PersonalViewController.xib */,
 				E45C529321BAD5E000C682B9 /* NewsViewController.xib */,
 				E45C52A121BBE36900C682B9 /* MakeDonationViewController.xib */,
+				E433DD3E21C0B8B90002CC67 /* LoginViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +227,7 @@
 			children = (
 				FC0BDAD621BA4D2B002054C6 /* GlobalStyle.swift */,
 				E45C529E21BBD63700C682B9 /* DummyData.swift */,
+				E433DD3B21C0B8200002CC67 /* GlobalVariables.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -298,6 +307,7 @@
 				E45C529521BAD5E000C682B9 /* NewsViewController.xib in Resources */,
 				E45C529D21BBC3BE00C682B9 /* CampaignCardCell.xib in Resources */,
 				E4EF426A21B7C5B900662CD3 /* DetailViewController.xib in Resources */,
+				E433DD4021C0B8B90002CC67 /* LoginViewController.xib in Resources */,
 				E4EF424921B7ACF000662CD3 /* LaunchScreen.storyboard in Resources */,
 				E45C529921BAD6A500C682B9 /* NewsCell.xib in Resources */,
 				E4EF425421B7AE8F00662CD3 /* DonationViewController.xib in Resources */,
@@ -339,12 +349,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Codig-Prototype-Terumbu/Pods-Codig-Prototype-Terumbu-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -368,8 +380,10 @@
 				E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */,
 				E45C529821BAD6A500C682B9 /* NewsCell.swift in Sources */,
 				E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */,
+				E433DD3F21C0B8B90002CC67 /* LoginViewController.swift in Sources */,
 				E45C529021BAD40700C682B9 /* PersonalViewController.swift in Sources */,
 				E4EF425921B7B07900662CD3 /* HomeViewController.swift in Sources */,
+				E433DD3C21C0B8200002CC67 /* GlobalVariables.swift in Sources */,
 				E45C52A221BBE36900C682B9 /* MakeDonationViewController.swift in Sources */,
 				E45C528C21BAC62D00C682B9 /* LocationCardCell.swift in Sources */,
 				E45C529C21BBC3BE00C682B9 /* CampaignCardCell.swift in Sources */,

@@ -15,6 +15,7 @@ class MakeDonationViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet var headingLabels: [UILabel]!
     @IBOutlet weak var amountTextField: UITextField!
+    @IBOutlet weak var makeDonationButton: UIButton!
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
@@ -25,6 +26,9 @@ class MakeDonationViewController: UIViewController {
         
         changeHeadingsColour()
         setupToolbar()
+        
+        makeDonationButton.clipsToBounds = true
+        makeDonationButton.layer.cornerRadius = 10
     }
     
     // MARK: - Private methods

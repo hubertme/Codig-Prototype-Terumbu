@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,12 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        // Firebase configuration
+        FirebaseApp.configure()
+        currentUser = Auth.auth().currentUser
+        
         // Override point for customization after application launch.
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        let rootVC = TabBarController()
+        let rootVC = LoginViewController()
         let navController = UINavigationController(rootViewController: rootVC)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
+        
         return true
     }
 
