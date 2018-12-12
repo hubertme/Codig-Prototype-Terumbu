@@ -6,7 +6,8 @@ target 'Codig-Prototype-Terumbu' do
   use_frameworks!
 
   # Pods for Codig-Prototype-Terumbu
-# pod 'ChameleonFramework'
+  #  pod 'ChameleonFramework'
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
+  pod 'Firebase'
 
 end
