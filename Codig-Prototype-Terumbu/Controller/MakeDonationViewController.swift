@@ -75,7 +75,7 @@ class MakeDonationViewController: UIViewController {
         
         let alertController = UIAlertController(title: "Donation confirmation", message: "Are you sure you want to donate with an amount of \(formattedAmountString)?", preferredStyle: .alert)
         let okayAction = UIAlertAction(title: "Yes", style: .default) { (_) in
-            let insideAlert = UIAlertController(title: "Donation received", message: "Please wait for 1-2 working days for our staff checking your donation. Thank you for donating!", preferredStyle: .alert)
+            let insideAlert = UIAlertController(title: "Donation received", message: "Thank you for donating! You will be notified soon once your donation has been received", preferredStyle: .alert)
             let okayAction = UIAlertAction(title: "You're welcome", style: .default, handler: { (_) in
                 self.handleDismissButton(self)
             })
