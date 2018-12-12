@@ -9,5 +9,6 @@ target 'Codig-Prototype-Terumbu' do
   #  pod 'ChameleonFramework'
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git'
   pod 'Firebase'
+  pod 'Firebase/Auth'
 
 end
