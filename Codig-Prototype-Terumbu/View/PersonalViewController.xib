@@ -37,13 +37,13 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please login to continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGv-o9-3Pu">
-                            <rect key="frame" x="32" y="177" width="311" height="72"/>
+                            <rect key="frame" x="32" y="137.5" width="311" height="72"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
                             <color key="textColor" red="0.2784313725" green="0.57254901960000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4l-08-Y5b">
-                            <rect key="frame" x="41" y="408" width="293" height="45"/>
+                            <rect key="frame" x="41" y="368.5" width="293" height="45"/>
                             <color key="backgroundColor" red="0.2784313725" green="0.57254901960000004" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="Bnb-eZ-bIQ"/>
@@ -57,7 +57,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We want to get in touch more with you so we can understand you better" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW0-9C-WQQ">
-                            <rect key="frame" x="32" y="288" width="311" height="40"/>
+                            <rect key="frame" x="32" y="248.5" width="311" height="40"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -66,8 +66,8 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="hW0-9C-WQQ" secondAttribute="trailing" constant="32" id="1qS-pf-03l"/>
-                        <constraint firstItem="eGv-o9-3Pu" firstAttribute="top" secondItem="dbr-Na-iby" secondAttribute="top" constant="177" id="3Jw-dj-FN0"/>
                         <constraint firstItem="b4l-08-Y5b" firstAttribute="leading" secondItem="dbr-Na-iby" secondAttribute="leading" constant="41" id="6vh-R6-6sF"/>
+                        <constraint firstItem="eGv-o9-3Pu" firstAttribute="centerY" secondItem="dbr-Na-iby" secondAttribute="centerY" constant="-150" id="75i-Qc-UkU"/>
                         <constraint firstAttribute="trailing" secondItem="b4l-08-Y5b" secondAttribute="trailing" constant="41" id="CyW-Dk-WcZ"/>
                         <constraint firstAttribute="trailing" secondItem="eGv-o9-3Pu" secondAttribute="trailing" constant="32" id="GoV-QX-de6"/>
                         <constraint firstItem="b4l-08-Y5b" firstAttribute="top" secondItem="hW0-9C-WQQ" secondAttribute="bottom" constant="80" id="Joo-zP-NqX"/>
