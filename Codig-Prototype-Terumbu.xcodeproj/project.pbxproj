@@ -12,6 +12,7 @@
 		E433DD3C21C0B8200002CC67 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433DD3B21C0B8200002CC67 /* GlobalVariables.swift */; };
 		E433DD3F21C0B8B90002CC67 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433DD3D21C0B8B90002CC67 /* LoginViewController.swift */; };
 		E433DD4021C0B8B90002CC67 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E433DD3E21C0B8B90002CC67 /* LoginViewController.xib */; };
+		E433DD4221C104550002CC67 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = E433DD4121C104550002CC67 /* News.swift */; };
 		E45C528821BAA92B00C682B9 /* NewsCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C528621BAA92B00C682B9 /* NewsCardCell.swift */; };
 		E45C528921BAA92B00C682B9 /* NewsCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C528721BAA92B00C682B9 /* NewsCardCell.xib */; };
 		E45C528C21BAC62D00C682B9 /* LocationCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C528A21BAC62D00C682B9 /* LocationCardCell.swift */; };
@@ -53,6 +54,7 @@
 		E433DD3B21C0B8200002CC67 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		E433DD3D21C0B8B90002CC67 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E433DD3E21C0B8B90002CC67 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E433DD4121C104550002CC67 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		E45C528621BAA92B00C682B9 /* NewsCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCardCell.swift; sourceTree = "<group>"; };
 		E45C528721BAA92B00C682B9 /* NewsCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCardCell.xib; sourceTree = "<group>"; };
 		E45C528A21BAC62D00C682B9 /* LocationCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCardCell.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			children = (
 				FC0BDAD321BA46C6002054C6 /* Campaign.swift */,
 				FC0BDAD121BA44DD002054C6 /* Report.swift */,
+				E433DD4121C104550002CC67 /* News.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				E45C528821BAA92B00C682B9 /* NewsCardCell.swift in Sources */,
 				E4EF426921B7C5B900662CD3 /* DetailViewController.swift in Sources */,
 				FC0BDAD721BA4D2B002054C6 /* GlobalStyle.swift in Sources */,
+				E433DD4221C104550002CC67 /* News.swift in Sources */,
 				FC0BDAD421BA46C7002054C6 /* Campaign.swift in Sources */,
 				E45C529F21BBD63700C682B9 /* DummyData.swift in Sources */,
 			);
