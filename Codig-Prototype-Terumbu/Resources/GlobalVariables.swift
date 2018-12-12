@@ -9,4 +9,4 @@
 import Foundation
 import FirebaseAuth
 
-var currentUser: User?
+var currentUser: User? = Auth.auth().currentUser

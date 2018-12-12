@@ -56,7 +56,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     }
                     return
                 }
-                print("Signed in with authentication:", result?.user.email)
+                currentUser = Auth.auth().currentUser
+                
+//                self.dismiss(animated: true, completion: nil)
             }
         }
     }
