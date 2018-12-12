@@ -50,6 +50,10 @@ class DetailCell: UITableViewCell {
     // MARK: Actions
     @IBAction func handleAddDonation(_ sender: Any) {
         let nextVC = MakeDonationViewController()
-        UIApplication.shared.keyWindow?.rootViewController?.present(nextVC, animated: true, completion: nil)
+        if (currentUser != nil){
+            UIApplication.shared.keyWindow?.rootViewController?.present(nextVC, animated: true, completion: nil)
+        } else {
+            UIApplication.shared.keyWindow?.rootViewController?.present(LoginViewController(), animated: true, completion: nil)
+        }
     }
 }

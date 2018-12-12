@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MakeDonationViewController" customModule="Codig_Prototype_Terumbu" customModuleProvider="target">
             <connections>
                 <outlet property="amountTextField" destination="27E-JI-fsG" id="puo-sh-lbi"/>
+                <outlet property="makeDonationButton" destination="nTB-xc-HnH" id="rEu-nK-YPy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outletCollection property="headingLabels" destination="wXk-Cb-umY" collectionClass="NSMutableArray" id="N01-lP-5c7"/>
                 <outletCollection property="headingLabels" destination="HeL-Cd-bDb" collectionClass="NSMutableArray" id="3p5-nn-glw"/>
