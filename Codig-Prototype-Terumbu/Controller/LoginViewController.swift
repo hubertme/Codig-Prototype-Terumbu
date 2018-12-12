@@ -11,6 +11,10 @@ import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
     // MARK: - Outlets
     @IBOutlet var headingLabels: [UILabel]!
     @IBOutlet weak var emailTextField: UITextField!
