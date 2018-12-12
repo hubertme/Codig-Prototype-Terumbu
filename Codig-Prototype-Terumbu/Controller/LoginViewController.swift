@@ -64,7 +64,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func handleDismissButtonTapped(){
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Private methods
