@@ -50,6 +50,10 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource{
         newsView.newsImageView.image = UIImage(named: "news-image0")
         newsView.summaryLabel.text = "Take care of our lovely corals for the next generation"
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEE, dd MMM yyyy"
+        newsView.dateLabel.text = "Mon, 10 Dec 2018"
+        
         return newsView
     }
     
