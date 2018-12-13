@@ -14,4 +14,5 @@ class News{
     var content: String = ""
     var newsImage = UIImage()
     var date = Date()
+    var summary: String = ""
 }

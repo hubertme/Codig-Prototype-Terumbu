@@ -9,5 +9,3 @@
 import Foundation
 
 var dummyCampaigns: Array<Campaign> = []
-
-

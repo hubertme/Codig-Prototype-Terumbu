@@ -28,6 +28,7 @@
 		E45C529F21BBD63700C682B9 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C529E21BBD63700C682B9 /* DummyData.swift */; };
 		E45C52A221BBE36900C682B9 /* MakeDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C52A021BBE36900C682B9 /* MakeDonationViewController.swift */; };
 		E45C52A321BBE36900C682B9 /* MakeDonationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C52A121BBE36900C682B9 /* MakeDonationViewController.xib */; };
+		E4909D1821C20901005F8CDF /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4909D1721C20901005F8CDF /* GlobalFunctions.swift */; };
 		E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */; };
 		E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */; };
 		E4EF424621B7ACF000662CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EF424521B7ACF000662CD3 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		E45C529E21BBD63700C682B9 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		E45C52A021BBE36900C682B9 /* MakeDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDonationViewController.swift; sourceTree = "<group>"; };
 		E45C52A121BBE36900C682B9 /* MakeDonationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeDonationViewController.xib; sourceTree = "<group>"; };
+		E4909D1721C20901005F8CDF /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		E4EF423B21B7ACEE00662CD3 /* Codig-Prototype-Terumbu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codig-Prototype-Terumbu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				FC0BDAD621BA4D2B002054C6 /* GlobalStyle.swift */,
 				E45C529E21BBD63700C682B9 /* DummyData.swift */,
 				E433DD3B21C0B8200002CC67 /* GlobalVariables.swift */,
+				E4909D1721C20901005F8CDF /* GlobalFunctions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4909D1821C20901005F8CDF /* GlobalFunctions.swift in Sources */,
 				E4EF427221B8236E00662CD3 /* Extension.swift in Sources */,
 				FC0BDAD221BA44DD002054C6 /* Report.swift in Sources */,
 				E4EF425621B7AECB00662CD3 /* TabBarController.swift in Sources */,

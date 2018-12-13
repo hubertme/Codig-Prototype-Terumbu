@@ -10,3 +10,4 @@ import Foundation
 import FirebaseAuth
 
 var currentUser: User? = Auth.auth().currentUser
+var newsList: Array<News> = []
