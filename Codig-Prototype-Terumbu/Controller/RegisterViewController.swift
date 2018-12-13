@@ -58,6 +58,8 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func handleUserSignUp(_ sender: UIButton){
-        
+        if !(isValidEmail(emailTextField.text!)){
+            createAlertWithOkayAction(title: "Invalid email", message: "Please enter a valid email format")
+        }
     }
 }
