@@ -34,6 +34,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         loginButton.layer.cornerRadius = 10
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if (currentUser != nil){
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     // MARK: - TextField delegate methods
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

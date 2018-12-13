@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
     
@@ -67,6 +68,18 @@ class RegisterViewController: UIViewController {
             createAlertWithOkayAction(title: "Invalid password", message: "Please enter password with minimum 6 characters")
         } else if (password != retypePasswordTextField.text!){
             createAlertWithOkayAction(title: "Password mismatch", message: "Please retype your password")
+        } else {
+            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                if let error = error {
+                    print("Error:", error.localizedDescription)
+                    return
+                }
+                print("Registered with the credential:", result?.user.email!)
+                print("Currently signed in user:", Auth.auth().currentUser?.email!)
+                currentUser = result?.user
+                
+                self.dismiss(animated: true, completion: nil)
+            }
         }
     }
 }
