@@ -29,6 +29,8 @@
 		E45C52A221BBE36900C682B9 /* MakeDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C52A021BBE36900C682B9 /* MakeDonationViewController.swift */; };
 		E45C52A321BBE36900C682B9 /* MakeDonationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45C52A121BBE36900C682B9 /* MakeDonationViewController.xib */; };
 		E4909D1821C20901005F8CDF /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4909D1721C20901005F8CDF /* GlobalFunctions.swift */; };
+		E4909D1C21C2241E005F8CDF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4909D1A21C2241E005F8CDF /* RegisterViewController.swift */; };
+		E4909D1D21C2241F005F8CDF /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4909D1B21C2241E005F8CDF /* RegisterViewController.xib */; };
 		E4EF423F21B7ACEE00662CD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */; };
 		E4EF424121B7ACEE00662CD3 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */; };
 		E4EF424621B7ACF000662CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4EF424521B7ACF000662CD3 /* Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		E45C52A021BBE36900C682B9 /* MakeDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDonationViewController.swift; sourceTree = "<group>"; };
 		E45C52A121BBE36900C682B9 /* MakeDonationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeDonationViewController.xib; sourceTree = "<group>"; };
 		E4909D1721C20901005F8CDF /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		E4909D1A21C2241E005F8CDF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E4909D1B21C2241E005F8CDF /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		E4EF423B21B7ACEE00662CD3 /* Codig-Prototype-Terumbu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codig-Prototype-Terumbu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4EF423E21B7ACEE00662CD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4EF424021B7ACEE00662CD3 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 				E45C529221BAD5E000C682B9 /* NewsViewController.swift */,
 				E45C52A021BBE36900C682B9 /* MakeDonationViewController.swift */,
 				E433DD3D21C0B8B90002CC67 /* LoginViewController.swift */,
+				E4909D1A21C2241E005F8CDF /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 				E45C529321BAD5E000C682B9 /* NewsViewController.xib */,
 				E45C52A121BBE36900C682B9 /* MakeDonationViewController.xib */,
 				E433DD3E21C0B8B90002CC67 /* LoginViewController.xib */,
+				E4909D1B21C2241E005F8CDF /* RegisterViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,6 +329,7 @@
 				E45C529121BAD40700C682B9 /* PersonalViewController.xib in Resources */,
 				E4EF425A21B7B07900662CD3 /* HomeViewController.xib in Resources */,
 				E433DD3A21C0B5A90002CC67 /* GoogleService-Info.plist in Resources */,
+				E4909D1D21C2241F005F8CDF /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +405,7 @@
 				E4EF425921B7B07900662CD3 /* HomeViewController.swift in Sources */,
 				E433DD3C21C0B8200002CC67 /* GlobalVariables.swift in Sources */,
 				E45C52A221BBE36900C682B9 /* MakeDonationViewController.swift in Sources */,
+				E4909D1C21C2241E005F8CDF /* RegisterViewController.swift in Sources */,
 				E45C528C21BAC62D00C682B9 /* LocationCardCell.swift in Sources */,
 				E45C529C21BBC3BE00C682B9 /* CampaignCardCell.swift in Sources */,
 				E45C528821BAA92B00C682B9 /* NewsCardCell.swift in Sources */,

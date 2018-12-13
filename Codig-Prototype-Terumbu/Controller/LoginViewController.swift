@@ -73,6 +73,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func navigateToRegisterPage(){
+        let registerVC = RegisterViewController()
+//        self.dismiss(animated: true, completion: nil)
+        self.present(registerVC, animated: true, completion: nil)
+    }
+    
     // MARK: - Private methods
     private func createAlertWithOkayAction(title: String, message: String){
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
