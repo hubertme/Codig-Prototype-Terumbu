@@ -72,10 +72,20 @@ class RegisterViewController: UIViewController {
             Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                 if let error = error {
                     print("Error:", error.localizedDescription)
+                    
+                    // Predicate
+                    let emailInUsePrediacate = NSPredicate(format: "SELF CONTAINS[cd] %@", "already in use")
+                    let networkErrorPredicate = NSPredicate(format: "SELF CONTAINS[cd] %@", "network error")
+                    if emailInUsePrediacate.evaluate(with: error.localizedDescription) {
+                        self.createAlertWithOkayAction(title: "User exist", message: "User email is exist, please use another email")
+                    } else if networkErrorPredicate.evaluate(with: error.localizedDescription){
+                        self.createAlertWithOkayAction(title: "Connectivity issue", message: "Please connect to an active internet connection to proceed")
+                    } else {
+                        self.createAlertWithOkayAction(title: "Failed to sign up", message: "Please try again")
+                    }
+                    
                     return
                 }
-                print("Registered with the credential:", result?.user.email!)
-                print("Currently signed in user:", Auth.auth().currentUser?.email!)
                 currentUser = result?.user
                 
                 self.dismiss(animated: true, completion: nil)
