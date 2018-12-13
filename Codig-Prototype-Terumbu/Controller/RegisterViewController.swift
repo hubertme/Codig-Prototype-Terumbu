@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
@@ -26,6 +26,16 @@ class RegisterViewController: UIViewController {
         
         signUpButton.clipsToBounds = true
         signUpButton.layer.cornerRadius = 10.0
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        retypePasswordTextField.delegate = self
+    }
+    
+    // MARK: - Delegates
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     // MARK: - Private Methods

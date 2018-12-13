@@ -122,6 +122,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4Wj-SR-YiJ" secondAttribute="trailing" constant="37" id="rdj-dT-bWc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="129" y="107"/>
         </view>
     </objects>
 </document>
