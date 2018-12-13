@@ -58,8 +58,15 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func handleUserSignUp(_ sender: UIButton){
-        if !(isValidEmail(emailTextField.text!)){
+        let email = emailTextField.text!
+        let password = passwordTextField.text!
+        
+        if !(isValidEmail(email)){
             createAlertWithOkayAction(title: "Invalid email", message: "Please enter a valid email format")
+        } else if !(isValidPassword(password)){
+            createAlertWithOkayAction(title: "Invalid password", message: "Please enter password with minimum 6 characters")
+        } else if (password != retypePasswordTextField.text!){
+            createAlertWithOkayAction(title: "Password mismatch", message: "Please retype your password")
         }
     }
 }
