@@ -31,6 +31,10 @@ class NewsCell: UITableViewCell {
         titleLabel.textColor = primaryColour
         summaryLabel.textColor = primaryColour
         newsLabel.textColor = .darkGray
+        
+        newsImageView.clipsToBounds = true
+        newsImageView.layer.masksToBounds = true
+        newsImageView.contentMode = .scaleAspectFill
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

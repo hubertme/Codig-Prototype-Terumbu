@@ -21,7 +21,7 @@ func fetchImageFromUrl(_ urlString: String,_ completion: @escaping (UIImage)->()
             return
         }
         guard let data = data else {return}
-        print(response?.suggestedFilename ?? url.lastPathComponent)
+//        print(response?.suggestedFilename ?? url.lastPathComponent)
         image = UIImage(data: data) ?? UIImage()
         
         completion(image)

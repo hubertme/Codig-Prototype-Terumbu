@@ -74,9 +74,8 @@ class HomeViewController: UIViewController {
                     let news = News()
                     news.title = json["title"].stringValue
                     let dateFormatter = DateFormatter()
-//                    dateFormatter.dateFormat = "yyyy-MM-dd"
-//                    news.date = dateFormatter.date(from: json["created_on"].stringValue)!
-                    news.date = Date()
+                    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                    news.date = dateFormatter.date(from: json["created_on"].stringValue)!
                     news.content = json["content"].stringValue
                     news.summary = json["summary"].stringValue
                     fetchImageFromUrl(json["img"].stringValue, { (image) in
@@ -88,7 +87,7 @@ class HomeViewController: UIViewController {
                     newsList.append(news)
                 }
             default:
-                print("Error fetching news:", response.error?.localizedDescription)
+                print("Error fetching news:", response.error?.localizedDescription as Any)
             }
         }
     }
@@ -200,11 +199,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if (collectionView.tag == 0){
-            if (indexPath.item == 0){
-                let newsVC = NewsViewController()
-                newsVC.title = "News"
-                navigationController?.pushViewController(newsVC, animated: true)
-            }
+            let newsVC = NewsViewController()
+            newsVC.selectedNews = newsList[indexPath.item]
+            newsVC.title = "News"
+            navigationController?.pushViewController(newsVC, animated: true)
         } else {
             let campaignsVC = DonationViewController()
             campaignsVC.title = locationData[indexPath.item]
