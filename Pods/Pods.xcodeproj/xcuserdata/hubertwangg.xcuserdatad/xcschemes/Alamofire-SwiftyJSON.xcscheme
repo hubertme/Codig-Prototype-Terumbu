@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F91BF5A32756F8CD2E31B960A3EF64AF"
-               BlueprintName = "Pods-Codig-Prototype-Terumbu"
+               BlueprintIdentifier = "0DB194629F1368FB26338A13747F37BF"
+               BlueprintName = "Alamofire-SwiftyJSON"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Pods-Codig-Prototype-Terumbu.framework">
+               BuildableName = "Alamofire-SwiftyJSON.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
